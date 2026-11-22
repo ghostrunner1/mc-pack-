@@ -2,7 +2,8 @@ import json, os, sys, time, hashlib, urllib.request, urllib.parse, urllib.error
 
 API = "https://api.exaroton.com/v1"
 TOKEN = os.environ["EXAROTON_TOKEN"]
-SERVER_ADDR = os.environ["EXAROTON_SERVER"].strip().lower()
+SERVER_RAW = os.environ["EXAROTON_SERVER"].strip().rstrip("/").split("/")[-1]
+SERVER_ADDR = SERVER_RAW.lower()
 LOCAL = os.environ.get("SERVER_FILES", "server-files")
 WAIT_MIN = int(os.environ.get("WAIT_MINUTES", "15"))
 MANIFEST = ".mc-pack-managed.json"
@@ -44,7 +45,7 @@ def q(path):
 
 def find_server():
     for s in req("GET", "/servers/")["data"]:
-        if s["address"].lower() == SERVER_ADDR or s["id"] == SERVER_ADDR or s["name"].lower() == SERVER_ADDR:
+        if s["address"].lower() == SERVER_ADDR or s["id"] == SERVER_RAW or s["name"].lower() == SERVER_ADDR:
             return s["id"]
     sys.exit(f"server {SERVER_ADDR} not found in this exaroton account")
 
