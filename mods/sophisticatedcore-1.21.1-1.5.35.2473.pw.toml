@@ -1,0 +1,8 @@
+name = "sophisticatedcore-1.21.1-1.5.35.2473"
+filename = "sophisticatedcore-1.21.1-1.5.35.2473.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/nmoqTijg/versions/FilyXPLY/sophisticatedcore-1.21.1-1.5.35.2473.jar"
+hash-format = "sha1"
+hash = "6e480fff57d27aa20a9c3488419422ac707a5f14"

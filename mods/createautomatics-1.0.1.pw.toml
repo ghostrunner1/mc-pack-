@@ -1,0 +1,8 @@
+name = "createautomatics-1.0.1"
+filename = "createautomatics-1.0.1.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/UEmUkPnV/versions/UggaJy6l/createautomatics-1.0.1.jar"
+hash-format = "sha1"
+hash = "988feb5e8eca8457657f3b3379f8c9ec8965514a"

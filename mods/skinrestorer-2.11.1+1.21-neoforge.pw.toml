@@ -1,0 +1,8 @@
+name = "skinrestorer-2.11.1+1.21-neoforge"
+filename = "skinrestorer-2.11.1+1.21-neoforge.jar"
+side = "server"
+
+[download]
+url = "https://cdn.modrinth.com/data/ghrZDhGW/versions/VW4OYPBP/skinrestorer-2.11.1%2B1.21-neoforge.jar"
+hash-format = "sha1"
+hash = "1926e526d84143daab4afcc3bb109caa385261ae"

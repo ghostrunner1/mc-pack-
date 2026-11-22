@@ -1,0 +1,8 @@
+name = "TireTracks-3.2.0"
+filename = "TireTracks-3.2.0.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/DRLhknEQ/versions/TmfuMNnB/TireTracks-3.2.0.jar"
+hash-format = "sha1"
+hash = "025492730872807600eb6eafbcae2ab06f23462e"

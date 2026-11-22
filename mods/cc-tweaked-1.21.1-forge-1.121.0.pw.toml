@@ -1,0 +1,8 @@
+name = "cc-tweaked-1.21.1-forge-1.121.0"
+filename = "cc-tweaked-1.21.1-forge-1.121.0.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/gu7yAYhd/versions/KNdTEfUA/cc-tweaked-1.21.1-forge-1.121.0.jar"
+hash-format = "sha1"
+hash = "946c83390aadfe0d8077198fcf22804cee206637"

@@ -1,0 +1,8 @@
+name = "garnished-2.1.9.2+1.21.1-neoforged"
+filename = "garnished-2.1.9.2+1.21.1-neoforged.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/6e2SlzR4/versions/EKUHxs6i/garnished-2.1.9.2%2B1.21.1-neoforged.jar"
+hash-format = "sha1"
+hash = "93f86f9a2e3e23c8c20761f8d7acdd625ad49a6f"

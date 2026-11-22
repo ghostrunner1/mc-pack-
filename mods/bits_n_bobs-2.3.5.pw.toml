@@ -1,0 +1,8 @@
+name = "bits_n_bobs-2.3.5"
+filename = "bits_n_bobs-2.3.5.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/T8bvmqVZ/versions/g9Lmjjc5/bits_n_bobs-2.3.5.jar"
+hash-format = "sha1"
+hash = "50119ba6849f2b165ab692ab312dbe4867444ac0"

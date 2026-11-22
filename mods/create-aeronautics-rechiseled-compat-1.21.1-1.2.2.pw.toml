@@ -1,0 +1,8 @@
+name = "create-aeronautics-rechiseled-compat-1.21.1-1.2.2"
+filename = "create-aeronautics-rechiseled-compat-1.21.1-1.2.2.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/ub0jAGhg/versions/b6O6XLL6/create-aeronautics-rechiseled-compat-1.21.1-1.2.2.jar"
+hash-format = "sha1"
+hash = "80083f94d278ddba23d43a92cd8a0de584a5a087"

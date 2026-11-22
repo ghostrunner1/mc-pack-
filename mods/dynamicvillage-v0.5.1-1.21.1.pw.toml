@@ -1,0 +1,8 @@
+name = "dynamicvillage-v0.5.1-1.21.1"
+filename = "dynamicvillage-v0.5.1-1.21.1.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/YCPmkFAm/versions/9maBydxx/dynamicvillage-v0.5.1-1.21.1.jar"
+hash-format = "sha1"
+hash = "98fc2adc502c0f34ee29cba48c1e733b88c94b1c"

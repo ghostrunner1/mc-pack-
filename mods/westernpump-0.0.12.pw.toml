@@ -1,0 +1,8 @@
+name = "westernpump-0.0.12"
+filename = "westernpump-0.0.12.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/R5wLkBHg/versions/30e3LZbl/westernpump-0.0.12.jar"
+hash-format = "sha1"
+hash = "746f6e589fbcc209e543938a816c9e885ed789c2"

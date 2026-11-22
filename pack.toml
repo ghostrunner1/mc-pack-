@@ -1,0 +1,13 @@
+name = "Create Aeronautics"
+author = "ghostrunner1"
+version = "1.2.7"
+pack-format = "packwiz:1.1.0"
+
+[index]
+file = "index.toml"
+hash-format = "sha256"
+hash = "53149033234863845f4a1230edbf35229463d7c5cbc891e8753680b5e313ae1d"
+
+[versions]
+minecraft = "1.21.1"
+neoforge = "21.1.266"

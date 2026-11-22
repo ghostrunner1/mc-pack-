@@ -1,0 +1,8 @@
+name = "Create_Warnautics-1.0.8+mc.1.21.1"
+filename = "Create_Warnautics-1.0.8+mc.1.21.1.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/DtRY2QQN/versions/YO1GPUvv/Create_Warnautics-1.0.8%2Bmc.1.21.1.jar"
+hash-format = "sha1"
+hash = "8ed7519b7fff5140cf2444f2508f2e64add4a413"
