@@ -769,5 +769,5 @@ metafile = true
 
 [[files]]
 file = "world/datapacks/server-tweaks.pw.toml"
-hash = "01e6f44b992d46884c287c786a0a34656de9916ce1f34422efbcb23909c635ee"
+hash = "8f1a4e60a556ca826ca772a26a054638a6e301e3789fc827fbcd303ddb9b3ca2"
 metafile = true

@@ -5,4 +5,4 @@ side = "server"
 [download]
 url = "https://raw.githubusercontent.com/ghostrunner1/mc-pack-/main/_files/world/datapacks/server-tweaks.zip"
 hash-format = "sha1"
-hash = "ddab3aa386f18afec9810de6809e4132e5d67439"
+hash = "2d0cb6f385279d47cfa072ee020ecf692c9fec9f"
