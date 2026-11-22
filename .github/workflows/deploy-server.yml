@@ -39,4 +39,4 @@ jobs:
           EXAROTON_SERVER: ${{ secrets.EXAROTON_SERVER }}
           WAIT_MINUTES: ${{ inputs.wait_minutes }}
           SERVER_FILES: server-files
-        run: python3 .github/scripts/deploy.py
+        run: python3 -u .github/scripts/deploy.py
