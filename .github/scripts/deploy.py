@@ -155,7 +155,18 @@ def main():
         delete(sid, p)
 
     uploaded = 0
+    last_check = 0
     for rel, full in sorted(target.items()):
+        if time.time() - last_check > 60:
+            last_check = time.time()
+            st = server(sid)["status"]
+            if st not in (0, 7):
+                print("server was started during the update (status", STATUS.get(st, st), ") - stopping it again")
+                if st != 3:
+                    wait_status(sid, {1})
+                    say(sid, "Сервер обновляется, он выключится. Подождите окончания обновления.")
+                    req("GET", f"/servers/{sid}/stop/")
+                wait_status(sid, {0, 7})
         if rel in remote and old_manifest.get(rel) == sums[rel]:
             continue
         print("upload", rel)
