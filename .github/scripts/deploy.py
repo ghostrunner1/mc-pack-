@@ -76,6 +76,9 @@ def list_dir(sid, path):
     return info.get("children") or []
 
 
+SIZES = {}
+
+
 def walk(sid, path):
     out = []
     kids = list_dir(sid, path)
@@ -86,6 +89,7 @@ def walk(sid, path):
         if k.get("isDirectory"):
             out += walk(sid, p)
         else:
+            SIZES[p] = k.get("size")
             out.append(p)
     return out
 
@@ -169,6 +173,8 @@ def main():
                 wait_status(sid, {0, 7})
         if rel in remote and old_manifest.get(rel) == sums[rel]:
             continue
+        if rel in remote and rel not in old_manifest and SIZES.get(rel) == os.path.getsize(full):
+            continue  # same name and size, uploaded by an interrupted run
         print("upload", rel)
         upload(sid, rel, full)
         uploaded += 1
