@@ -1,12 +1,12 @@
 name = "Create Aeronautics"
 author = "ghostrunner1"
-version = "1.2.7"
+version = "1.2.8"
 pack-format = "packwiz:1.1.0"
 
 [index]
 file = "index.toml"
 hash-format = "sha256"
-hash = "53149033234863845f4a1230edbf35229463d7c5cbc891e8753680b5e313ae1d"
+hash = "e2cea864531c87561288d892a63986257370033d93d4eb3a90855f5678236c22"
 
 [versions]
 minecraft = "1.21.1"

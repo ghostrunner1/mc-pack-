@@ -1,0 +1,8 @@
+name = "tacz_turrets-neoforge-4.4.0-1.21.1"
+filename = "tacz_turrets-neoforge-4.4.0-1.21.1.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/8k8SjeJB/versions/vHWDIMtn/tacz_turrets-neoforge-4.4.0-1.21.1.jar"
+hash-format = "sha1"
+hash = "c141f9c37b16f99a4490baae8c306d9bd1506abb"

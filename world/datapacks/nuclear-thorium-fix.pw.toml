@@ -1,0 +1,8 @@
+name = "nuclear-thorium-fix"
+filename = "nuclear-thorium-fix.zip"
+side = "server"
+
+[download]
+url = "https://raw.githubusercontent.com/ghostrunner1/mc-pack-/main/_files/world/datapacks/nuclear-thorium-fix.zip"
+hash-format = "sha1"
+hash = "a569551bfa451923c89970dda72ceb685b9cf1f1"

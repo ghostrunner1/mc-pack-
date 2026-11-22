@@ -1,0 +1,8 @@
+name = "taczaddon-1.2.0-hotfix-neoforge-1.21.1"
+filename = "taczaddon-1.2.0-hotfix-neoforge-1.21.1.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/3Ihyt5WL/versions/PRLossw6/taczaddon-1.2.0-hotfix-neoforge-1.21.1.jar"
+hash-format = "sha1"
+hash = "0eef86a93b1dc9bd733bd57686c26dac630cfe62"

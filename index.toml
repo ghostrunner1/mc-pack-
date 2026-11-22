@@ -110,6 +110,11 @@ hash = "9d6a63c3290bb31beb6e5a911e5da92af5a82849c803a2836255696e3f2bd914"
 metafile = true
 
 [[files]]
+file = "mods/ZeroContact-1.21.1-neoforge-main-build-81-402b8c9.pw.toml"
+hash = "d1d58f019a5760a7f85115d223178eb702d943052fd5d81a5220930d239d3388"
+metafile = true
+
+[[files]]
 file = "mods/aero_no_horizon-1.0.4.jar"
 hash = "8e92cb3c84186134b5579369360dbf010abda8fedf82a9410c5e237c612760cc"
 
@@ -126,6 +131,10 @@ metafile = true
 [[files]]
 file = "mods/alltheleaks-1.1.13+1.21.1-neoforge.jar"
 hash = "c9b76623003dd05dda452d9ed42cb23623b09383fe9ac1efb41c46a3b69ff601"
+
+[[files]]
+file = "mods/ambientcore-lib-1.4.jar"
+hash = "a4928f26489a229c48df7405ee8d1470d4548d80a29b3bc8763029abe4685be0"
 
 [[files]]
 file = "mods/appleskin-neoforge-mc1.21-3.0.9.pw.toml"
@@ -236,6 +245,11 @@ hash = "79776ab94cf4e3c64b83600ca91f7ed8b376585b537d3b3813fac7ad26f8dda9"
 metafile = true
 
 [[files]]
+file = "mods/create_aeronautics_transmission_linkage-0.2.9.pw.toml"
+hash = "7a9b9ef97a1794aad609068dd17240210966d7f0d76a26adcf492879d24b38aa"
+metafile = true
+
+[[files]]
 file = "mods/create_avionics-neoforge-1.21.1-0.7.0.pw.toml"
 hash = "a2eb2b8af79d31b95c4d76e5a4b470c56703fa4a9e4ec1c5c0a7e6315c693b27"
 metafile = true
@@ -319,6 +333,11 @@ hash = "ecb2ab3aba8018e8cee9c59710803cf6ac7aeef51c8115ad86cf8cf507937727"
 metafile = true
 
 [[files]]
+file = "mods/createnuclear-2.0.2-neoforge.pw.toml"
+hash = "203cf43f93ac5410bb10a63e6197fdd936fe85703550bbb2bb54165bbf09baeb"
+metafile = true
+
+[[files]]
 file = "mods/createoreexcavation-1.21-1.6.8.pw.toml"
 hash = "9caf1ad54ab86f08e5bea09cdd7c4bc5e6ab590b222ffc099febb11e2a131bca"
 metafile = true
@@ -331,6 +350,11 @@ metafile = true
 [[files]]
 file = "mods/crittersandcompanions-neoforge-1.21.1-2.7.0.pw.toml"
 hash = "892a74c8cf697cc466dd8f41a69d957a4022b35f7f9b0df6367d8a9f59a94a10"
+metafile = true
+
+[[files]]
+file = "mods/curios-neoforge-9.6.0+1.21.1.pw.toml"
+hash = "74f005bbb5a527b6a7a2bf5a2f44a0aa8e1d7e745f17a0ec6e2bddd786a2ea59"
 metafile = true
 
 [[files]]
@@ -373,6 +397,10 @@ hash = "9fe42a00f7ce9a2b730c5b09fda3dee3c52a294e4b5c838b69f449e7ddcd0cdc"
 metafile = true
 
 [[files]]
+file = "mods/entityanim-lib-2.1.jar"
+hash = "8806578d1262ba2973fd26cd9a1bb8bbba36f01f91b3a11d0d5d1eade298b864"
+
+[[files]]
 file = "mods/entityculling-neoforge-1.12.1-mc1.21.1.pw.toml"
 hash = "646c5f2e2e6b281ab0bb1b5de6dc21ae25581b429040ee02cf42c69f76553144"
 metafile = true
@@ -398,6 +426,11 @@ hash = "c1c315bda8f088a43be62033add1fda749b0a7c88ac13d43c8e7d5172fb49b20"
 metafile = true
 
 [[files]]
+file = "mods/fzzy_config-0.7.7+fix1+1.21+neoforge.pw.toml"
+hash = "59a007c7544d81e3ec12136e12e5cf8bdd814716b9a927014489018f35dc770a"
+metafile = true
+
+[[files]]
 file = "mods/garnished-2.1.9.2+1.21.1-neoforged.pw.toml"
 hash = "d7803627bed1b29e2c1a1d69f566bf8156431338eea87271b9caf8251cb7cadd"
 metafile = true
@@ -405,6 +438,16 @@ metafile = true
 [[files]]
 file = "mods/geckolib-neoforge-1.21.1-4.9.3.pw.toml"
 hash = "c8c80f862ee346b5ec04101aa82ddef52bcbd48623e6acef25601c4839e03b6b"
+metafile = true
+
+[[files]]
+file = "mods/gundb-2.2.2-1.21.1.pw.toml"
+hash = "3083a3392d4f94560abc6a16b649ab14ed7932598fc7a885ebca8bd60c7a20a8"
+metafile = true
+
+[[files]]
+file = "mods/gunsmithlib-neoforge-1.21.1-tacz1.2.0_hotfix-7.1.3.pw.toml"
+hash = "a74b91b3c0dcc553b556ad87a62c970d0d39aa81c76d72e159593ffe7dce3b56"
 metafile = true
 
 [[files]]
@@ -651,18 +694,28 @@ hash = "8d673c0abea83bb9e903b8377cdc6c956ac12255a910433d9945cae5bda34aaa"
 metafile = true
 
 [[files]]
-file = "mods/tacz-neoforge-1.21.1-1.1.8-hotfix-r7.pw.toml"
-hash = "3a6eaaf95e3cf457e5f3d9fcfc776bf31a375d6c04090b321d1da4847aabe7fb"
-metafile = true
-
-[[files]]
-file = "mods/tacz_aero_compat-1.8.0.pw.toml"
-hash = "d5ae319a6d4a30a8d4f9aa6e3e6e7bc04a0103048f7e91e385258b723643774f"
+file = "mods/tacz-neoforge-1.21.1-1.2.0-hotfix.pw.toml"
+hash = "312f297915a07c4169599298723f9458e5b98123e6d67f23e4780664594db756"
 metafile = true
 
 [[files]]
 file = "mods/tacz_c-1.0.2+neoforge.1.21.1.pw.toml"
 hash = "33e82185a25bd1e880157a899d5687fe2d9a049e357bb2ec757341c1d86c9d94"
+metafile = true
+
+[[files]]
+file = "mods/tacz_turrets-neoforge-4.4.0-1.21.1.pw.toml"
+hash = "735e89370297413007d9bbcb086e3c24fdb49ffcc85a9fd87bcbd21652075676"
+metafile = true
+
+[[files]]
+file = "mods/tacz_x_guns_lights_addon-neoforge-1.21.1-2.8.2.pw.toml"
+hash = "b2ab02e807dee8d68cfdda8bb10e51d08b6c5dd70c113b14b01559eebcec73e6"
+metafile = true
+
+[[files]]
+file = "mods/taczaddon-1.2.0-hotfix-neoforge-1.21.1.pw.toml"
+hash = "98e88bf3d1a33e55f18dab214509dba18aa1259c2e37905c5fede77d8c4bd493"
 metafile = true
 
 [[files]]
@@ -703,4 +756,23 @@ preserve = true
 [[files]]
 file = "resourcepacks/FreshAnimations_v1.11.2_1.20+.pw.toml"
 hash = "a9c101b8da42fc7e82bd88d5c88f19a6b405b3afaced4663193c0dbe217f2986"
+metafile = true
+
+[[files]]
+file = "tacz/[eof]helldivers_gun_pack.zip"
+hash = "4812064c9d13223a5e2f9113aa6c20ffa1d4541242a2c241bf1f9179d33b2366"
+
+[[files]]
+file = "world/datapacks/hd-ammo-datapack.pw.toml"
+hash = "c545a204de5b0f5adeb04e7f987537a633eb4abbe1cf28e3cb8d08f306001c50"
+metafile = true
+
+[[files]]
+file = "world/datapacks/nuclear-thorium-fix.pw.toml"
+hash = "78e5e401187d48a3a8d5a86045032855822f35c8302d61351d4b3cc273411c0c"
+metafile = true
+
+[[files]]
+file = "world/datapacks/server-tweaks.pw.toml"
+hash = "01e6f44b992d46884c287c786a0a34656de9916ce1f34422efbcb23909c635ee"
 metafile = true

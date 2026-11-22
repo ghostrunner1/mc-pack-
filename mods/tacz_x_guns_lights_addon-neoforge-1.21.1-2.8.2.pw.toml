@@ -1,0 +1,8 @@
+name = "tacz_x_guns_lights_addon-neoforge-1.21.1-2.8.2"
+filename = "tacz_x_guns_lights_addon-neoforge-1.21.1-2.8.2.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/XZBT7YTE/versions/VJUTrr8u/tacz_x_guns_lights_addon-neoforge-1.21.1-2.8.2.jar"
+hash-format = "sha1"
+hash = "1afde176d9c9c3df9f681322583dcec7b9516ad8"

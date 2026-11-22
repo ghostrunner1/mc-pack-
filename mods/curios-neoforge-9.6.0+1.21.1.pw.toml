@@ -1,0 +1,8 @@
+name = "curios-neoforge-9.6.0+1.21.1"
+filename = "curios-neoforge-9.6.0+1.21.1.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/vvuO3ImH/versions/KJsZIQrT/curios-neoforge-9.6.0%2B1.21.1.jar"
+hash-format = "sha1"
+hash = "110fa48c45be8d8421bf2e0bd706f11ec47cc7f8"

@@ -1,0 +1,8 @@
+name = "tacz-neoforge-1.21.1-1.2.0-hotfix"
+filename = "tacz-neoforge-1.21.1-1.2.0-hotfix.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/SzzJttH8/versions/tJiZL0He/tacz-neoforge-1.21.1-1.2.0-hotfix.jar"
+hash-format = "sha1"
+hash = "760cfbbd52783213567d4d7b167caafd1654854b"
