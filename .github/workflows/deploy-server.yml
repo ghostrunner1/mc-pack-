@@ -1,0 +1,42 @@
+name: Deploy to exaroton server
+
+on:
+  workflow_dispatch:
+    inputs:
+      wait_minutes:
+        description: "Minutes to wait for players before shutdown"
+        default: "15"
+        required: true
+
+concurrency:
+  group: deploy-server
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: "21"
+
+      - name: Build server files with packwiz
+        run: |
+          mkdir -p server-files
+          cd server-files
+          curl -sSL -o packwiz-installer-bootstrap.jar https://github.com/packwiz/packwiz-installer-bootstrap/releases/latest/download/packwiz-installer-bootstrap.jar
+          java -jar packwiz-installer-bootstrap.jar -g -s server "https://raw.githubusercontent.com/${{ github.repository }}/${{ github.sha }}/pack.toml"
+          rm -f packwiz-installer-bootstrap.jar packwiz-installer.jar packwiz.json
+          ls mods | wc -l
+
+      - name: Upload to exaroton and restart
+        env:
+          EXAROTON_TOKEN: ${{ secrets.EXAROTON_TOKEN }}
+          EXAROTON_SERVER: ${{ secrets.EXAROTON_SERVER }}
+          WAIT_MINUTES: ${{ inputs.wait_minutes }}
+          SERVER_FILES: server-files
+        run: python3 .github/scripts/deploy.py
