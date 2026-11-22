@@ -8,9 +8,9 @@ LOCAL = os.environ.get("SERVER_FILES", "server-files")
 WAIT_MIN = int(os.environ.get("WAIT_MINUTES", "15"))
 MANIFEST = ".mc-pack-managed.json"
 # directories fully owned by the pack: anything else inside them is removed
-OWNED_DIRS = ["mods", "tacz"]
+OWNED_DIRS = ["mods"]
 # files the pack uploads elsewhere are tracked in MANIFEST and only those are removed later
-UPLOAD_ROOTS = ["mods", "tacz", "world/datapacks"]
+UPLOAD_ROOTS = ["mods", "world/datapacks"]
 
 STATUS = {0: "offline", 1: "online", 2: "starting", 3: "stopping", 4: "restarting",
           5: "saving", 6: "loading", 7: "crashed", 8: "pending", 10: "preparing"}
@@ -146,6 +146,11 @@ def main():
     remote = set()
     for d in UPLOAD_ROOTS:
         remote |= set(walk(sid, d))
+    # tacz/ also holds TaCZ's own extracted default gun pack: only look at top-level files
+    for k in list_dir(sid, "tacz") or []:
+        if not k.get("isDirectory"):
+            SIZES["tacz/" + k["name"]] = k.get("size")
+            remote.add("tacz/" + k["name"])
 
     to_delete = set()
     for p in remote:
