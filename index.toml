@@ -773,6 +773,11 @@ hash = "816fd0005f4c3715c3a0a1b6d5926fd374554ca51ca78de713ad5759971f967f"
 metafile = true
 
 [[files]]
+file = "world/datapacks/creative-crafts.pw.toml"
+hash = "c16084c3de6b29933c0eb170ba894de637ea8d5724d77105e9569422c67e33a2"
+metafile = true
+
+[[files]]
 file = "world/datapacks/hd-ammo-datapack.pw.toml"
 hash = "c545a204de5b0f5adeb04e7f987537a633eb4abbe1cf28e3cb8d08f306001c50"
 metafile = true
