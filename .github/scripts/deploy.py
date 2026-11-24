@@ -108,6 +108,10 @@ def main():
     s = server(sid)
     print("server", s["name"], s["address"], STATUS.get(s["status"], s["status"]))
 
+    # start the server after the update only if we took it down from under players
+    # (or someone started it while the update was running)
+    restart_after = False
+
     if s["status"] in (1, 2, 6, 10):
         if s["status"] != 1:
             wait_status(sid, {1})
@@ -116,6 +120,8 @@ def main():
         warned = set()
         while time.time() < deadline:
             players = server(sid).get("players", {}).get("count", 0)
+            if players > 0:
+                restart_after = True
             if players == 0:
                 print("no players online, updating now")
                 break
@@ -171,6 +177,7 @@ def main():
             st = server(sid)["status"]
             if st not in (0, 7):
                 print("server was started during the update (status", STATUS.get(st, st), ") - stopping it again")
+                restart_after = True
                 if st != 3:
                     wait_status(sid, {1})
                     say(sid, "Сервер обновляется, он выключится. Подождите окончания обновления.")
@@ -187,8 +194,11 @@ def main():
     req("PUT", f"/servers/{sid}/files/data/{q(MANIFEST)}", json.dumps(sums, indent=1).encode(), "application/octet-stream")
     print(f"uploaded {uploaded} files, deleted {len(to_delete)}, unchanged {len(target) - uploaded}")
 
-    req("GET", f"/servers/{sid}/start/")
-    print("server start requested")
+    if restart_after:
+        req("GET", f"/servers/{sid}/start/")
+        print("server start requested")
+    else:
+        print("server was not in use before the update - leaving it offline")
 
 
 if __name__ == "__main__":
