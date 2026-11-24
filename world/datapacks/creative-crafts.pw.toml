@@ -5,4 +5,4 @@ side = "server"
 [download]
 url = "https://raw.githubusercontent.com/ghostrunner1/mc-pack-/main/_files/world/datapacks/creative-crafts.zip"
 hash-format = "sha1"
-hash = "47d26e2ebae9c622e11d85cd047b889308c110a2"
+hash = "89f02f4b82ac464644627461c2fc3f3ed7536c97"
