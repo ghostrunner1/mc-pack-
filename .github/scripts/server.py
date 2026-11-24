@@ -8,7 +8,9 @@ WAIT = int(os.environ.get("WAIT_MINUTES", "15"))
 KEEP = re.compile(r"(ERROR|FATAL|Exception|Caused by|\bat [\w.$]+\(|Crash|crash-report|Failed|failed to|Mod loading|Done \(|"
                   r"Starting minecraft server|Stopping server|Loading \d+ mods|safezone|creativecrafts|datapack|"
                   r"Missing|Invalid|Couldn't)", re.I)
-DROP = re.compile(r"(joined the game|left the game|lost connection|logged in with|<[^>]+>|\[Server\]|issued server command|UUID of player)", re.I)
+DROP = re.compile(r"(Couldn't parse element ResourceKey\[minecraft:root / minecraft:loot_table\]|Could not decode GlobalLootModifier|"
+                  r"Failed to apply tag physics properties|joined the game|left the game|lost connection|logged in with|<[^>]+>|\[Server\]|issued server command|UUID of player)", re.I)
+UUID = re.compile(r"\b[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}\b", re.I)
 IP = re.compile(r"\b\d{1,3}(?:\.\d{1,3}){3}(?::\d+)?\b|\[?[0-9a-f]{1,4}(?::[0-9a-f]{0,4}){3,7}\]?", re.I)
 
 
@@ -21,9 +23,9 @@ def print_log(sid):
     body = req("GET", f"/servers/{sid}/logs/")
     text = (body.get("data") or {}).get("content") or ""
     lines = [l for l in text.splitlines() if KEEP.search(l) and not DROP.search(l)]
-    print(f"--- log: {len(text.splitlines())} lines total, {len(lines)} shown (filtered, IPs redacted) ---")
+    print(f"--- log: {len(text.splitlines())} lines total, {len(lines)} shown (filtered, IPs/UUIDs redacted) ---")
     for l in lines[-250:]:
-        print(IP.sub("<ip>", l)[:400])
+        print(UUID.sub("<uuid>", IP.sub("<ip>", l))[:400])
 
 
 sid = find_server()
