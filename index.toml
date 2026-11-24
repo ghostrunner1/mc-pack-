@@ -605,6 +605,11 @@ hash = "f6d92543a1702469fb37a34d2a9cc565240359877dae6f8105632d84638b4437"
 metafile = true
 
 [[files]]
+file = "mods/safezone-1.0.0.pw.toml"
+hash = "39cf51ab9a2adf984d0ff254e017685358119809e3d2f154e57b3ada950d6b78"
+metafile = true
+
+[[files]]
 file = "mods/servercore-neoforge-1.5.19+1.21.1.pw.toml"
 hash = "ab1b3c1615304fedd64968ece05d9d062ce506c94c50969f3a75c6b771fa9ddf"
 metafile = true
