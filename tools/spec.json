@@ -935,6 +935,11 @@
    "path": "mods/safezone-1.0.0.jar",
    "local": "repo:_files/mods/safezone-1.0.0.jar",
    "side": "server"
+  },
+  {
+   "path": "world/datapacks/nuclear-easy.zip",
+   "local": "repo:_files/world/datapacks/nuclear-easy.zip",
+   "side": "server"
   }
  ],
  "raw": {

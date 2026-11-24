@@ -1,0 +1,8 @@
+name = "nuclear-easy"
+filename = "nuclear-easy.zip"
+side = "server"
+
+[download]
+url = "https://raw.githubusercontent.com/ghostrunner1/mc-pack-/main/_files/world/datapacks/nuclear-easy.zip"
+hash-format = "sha1"
+hash = "61e8eb460bb37fa3b31fff21e74cce8afad1c918"

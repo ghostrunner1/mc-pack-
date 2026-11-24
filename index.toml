@@ -783,6 +783,11 @@ hash = "c545a204de5b0f5adeb04e7f987537a633eb4abbe1cf28e3cb8d08f306001c50"
 metafile = true
 
 [[files]]
+file = "world/datapacks/nuclear-easy.pw.toml"
+hash = "74926bb04c731f93f35be4879afded6b15ecb5964f90ecc3562661ddc480b6cc"
+metafile = true
+
+[[files]]
 file = "world/datapacks/nuclear-thorium-fix.pw.toml"
 hash = "78e5e401187d48a3a8d5a86045032855822f35c8302d61351d4b3cc273411c0c"
 metafile = true
