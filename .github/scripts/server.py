@@ -34,14 +34,17 @@ CHECK_KEEP = re.compile(r"(data pack|datapack|TPS|Mean tick|players online|There
 
 def run_check(sid):
     def live():
-        b = req("GET", f"/servers/{sid}/files/data/{urllib.parse.quote('logs/latest.log')}/", raw=True) or b""
-        return b.decode("utf8", "replace")
+        return (req("GET", f"/servers/{sid}/logs/").get("data") or {}).get("content") or ""
     before = len(live().splitlines())
     for c in CHECK_CMDS:
         req("POST", f"/servers/{sid}/command/", json.dumps({"command": c}).encode(), "application/json")
         time.sleep(2)
-    time.sleep(5)
-    text = live()
+    text = ""
+    for _ in range(12):  # /logs/ is cached by exaroton, wait until the command output shows up
+        time.sleep(20)
+        text = live()
+        if any(k in text[-20000:] for k in ("data pack", "Mean tick", "players online")):
+            break
     print("--- check output ---")
     for l in text.splitlines()[max(0, before - 5):]:
         if CHECK_KEEP.search(l) and not re.search(r"joined|left|<", l):
