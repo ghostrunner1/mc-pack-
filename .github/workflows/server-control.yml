@@ -1,0 +1,31 @@
+name: Server status
+
+on:
+  workflow_dispatch:
+    inputs:
+      action:
+        description: "status | start | logs"
+        default: "status"
+        required: true
+      wait_minutes:
+        description: "Minutes to wait for the server to come online (start)"
+        default: "15"
+        required: true
+
+concurrency:
+  group: deploy-server
+  cancel-in-progress: false
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - name: Server
+        env:
+          EXAROTON_TOKEN: ${{ secrets.EXAROTON_TOKEN }}
+          EXAROTON_SERVER: ${{ secrets.EXAROTON_SERVER }}
+          ACTION: ${{ inputs.action }}
+          WAIT_MINUTES: ${{ inputs.wait_minutes }}
+        run: python3 .github/scripts/server.py
