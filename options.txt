@@ -2,5 +2,5 @@ version:3955
 lang:ru_ru
 enableVsync:true
 maxFps:260
-resourcePacks:["vanilla","mod_resources","file/FreshAnimations_v1.11.2_1.20+.zip","file/BlackPigs.zip"]
+resourcePacks:["vanilla","mod_resources","file/FreshAnimations_v1.11.2_1.20+.zip"]
 key_key.carry.desc:key.keyboard.right.shift
