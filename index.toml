@@ -783,6 +783,11 @@ hash = "c545a204de5b0f5adeb04e7f987537a633eb4abbe1cf28e3cb8d08f306001c50"
 metafile = true
 
 [[files]]
+file = "world/datapacks/lead-fix.pw.toml"
+hash = "4af08402115460f8830b346307a7bad97a31113cfc5af8e96573d64e60e196eb"
+metafile = true
+
+[[files]]
 file = "world/datapacks/nuclear-easy.pw.toml"
 hash = "6c96c0f21eab7d54b3f0737fdd1db5881ccffee93060dc45636c65a7d87c0dd1"
 metafile = true

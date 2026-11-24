@@ -1,0 +1,8 @@
+name = "lead-fix"
+filename = "lead-fix.zip"
+side = "server"
+
+[download]
+url = "https://raw.githubusercontent.com/ghostrunner1/mc-pack-/main/_files/world/datapacks/lead-fix.zip"
+hash-format = "sha1"
+hash = "c1cd0834761a733a7b8914ff4cf0b4a84ed1ea68"

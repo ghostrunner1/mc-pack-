@@ -940,6 +940,11 @@
    "path": "world/datapacks/nuclear-easy.zip",
    "local": "repo:_files/world/datapacks/nuclear-easy.zip",
    "side": "server"
+  },
+  {
+   "path": "world/datapacks/lead-fix.zip",
+   "local": "repo:_files/world/datapacks/lead-fix.zip",
+   "side": "server"
   }
  ],
  "raw": {
