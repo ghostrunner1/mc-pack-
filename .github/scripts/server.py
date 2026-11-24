@@ -1,4 +1,4 @@
-import json, os, re, sys, time
+import json, os, re, sys, time, urllib.parse
 sys.path.insert(0, os.path.dirname(__file__))
 from deploy import req, find_server, server, STATUS  # noqa: E402
 
@@ -33,13 +33,15 @@ CHECK_KEEP = re.compile(r"(data pack|datapack|TPS|Mean tick|players online|There
 
 
 def run_check(sid):
-    body = req("GET", f"/servers/{sid}/logs/")
-    before = len(((body.get("data") or {}).get("content") or "").splitlines())
+    def live():
+        b = req("GET", f"/servers/{sid}/files/data/{urllib.parse.quote('logs/latest.log')}/", raw=True) or b""
+        return b.decode("utf8", "replace")
+    before = len(live().splitlines())
     for c in CHECK_CMDS:
         req("POST", f"/servers/{sid}/command/", json.dumps({"command": c}).encode(), "application/json")
         time.sleep(2)
     time.sleep(5)
-    text = (req("GET", f"/servers/{sid}/logs/").get("data") or {}).get("content") or ""
+    text = live()
     print("--- check output ---")
     for l in text.splitlines()[max(0, before - 5):]:
         if CHECK_KEEP.search(l) and not re.search(r"joined|left|<", l):
