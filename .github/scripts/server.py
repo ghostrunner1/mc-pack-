@@ -1,4 +1,4 @@
-import os, re, sys, time
+import json, os, re, sys, time
 sys.path.insert(0, os.path.dirname(__file__))
 from deploy import req, find_server, server, STATUS  # noqa: E402
 
@@ -28,6 +28,24 @@ def print_log(sid):
         print(UUID.sub("<uuid>", IP.sub("<ip>", l))[:400])
 
 
+CHECK_CMDS = ["datapack list enabled", "datapack list available", "neoforge tps", "list"]
+CHECK_KEEP = re.compile(r"(data pack|datapack|TPS|Mean tick|players online|There are)", re.I)
+
+
+def run_check(sid):
+    body = req("GET", f"/servers/{sid}/logs/")
+    before = len(((body.get("data") or {}).get("content") or "").splitlines())
+    for c in CHECK_CMDS:
+        req("POST", f"/servers/{sid}/command/", json.dumps({"command": c}).encode(), "application/json")
+        time.sleep(2)
+    time.sleep(5)
+    text = (req("GET", f"/servers/{sid}/logs/").get("data") or {}).get("content") or ""
+    print("--- check output ---")
+    for l in text.splitlines()[max(0, before - 5):]:
+        if CHECK_KEEP.search(l) and not re.search(r"joined|left|<", l):
+            print(UUID.sub("<uuid>", IP.sub("<ip>", l))[:600])
+
+
 sid = find_server()
 s = server(sid)
 print("before:", status_line(s))
@@ -46,6 +64,12 @@ if ACTION == "start":
 
 if ACTION in ("start", "logs") or s["status"] == 7:
     print_log(sid)
+
+if ACTION == "check" or (ACTION == "start" and s["status"] == 1):
+    if s["status"] == 1:
+        run_check(sid)
+    else:
+        print("check skipped: server is not online")
 
 if ACTION == "start" and s["status"] != 1:
     sys.exit(f"server did not come online: {STATUS.get(s['status'], s['status'])}")

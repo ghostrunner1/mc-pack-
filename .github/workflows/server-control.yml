@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
     inputs:
       action:
-        description: "status | start | logs"
+        description: "status | start | logs | check"
         default: "status"
         required: true
       wait_minutes:
