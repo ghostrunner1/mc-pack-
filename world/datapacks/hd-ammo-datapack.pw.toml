@@ -5,4 +5,4 @@ side = "server"
 [download]
 url = "https://raw.githubusercontent.com/ghostrunner1/mc-pack-/main/_files/world/datapacks/hd-ammo-datapack.zip"
 hash-format = "sha1"
-hash = "679d943624e7862ca2c549d5012d26b1a94c3835"
+hash = "a4d6057dbac9eda3f3663eb549c74d6ead6838d5"

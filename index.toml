@@ -779,7 +779,7 @@ metafile = true
 
 [[files]]
 file = "world/datapacks/hd-ammo-datapack.pw.toml"
-hash = "c545a204de5b0f5adeb04e7f987537a633eb4abbe1cf28e3cb8d08f306001c50"
+hash = "669fa19ff13e21cc76a10d2084087e3a730253c5f60d5f062f1b009d96d566dd"
 metafile = true
 
 [[files]]
