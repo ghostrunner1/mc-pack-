@@ -765,7 +765,7 @@ metafile = true
 
 [[files]]
 file = "tacz/[eof]helldivers_gun_pack.zip"
-hash = "4812064c9d13223a5e2f9113aa6c20ffa1d4541242a2c241bf1f9179d33b2366"
+hash = "5fb9c3c7e99cfe8d2603a1469434f5a3542124a02d72303ddcc8484c997c0b9e"
 
 [[files]]
 file = "world/datapacks/PK_No_Creeper_Grief_V.3.0.1_MC_1.21.pw.toml"
