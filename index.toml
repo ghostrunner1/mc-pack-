@@ -758,6 +758,11 @@ file = "tacz/[eof]helldivers_gun_pack.zip"
 hash = "4812064c9d13223a5e2f9113aa6c20ffa1d4541242a2c241bf1f9179d33b2366"
 
 [[files]]
+file = "world/datapacks/PK_No_Creeper_Grief_V.3.0.1_MC_1.21.pw.toml"
+hash = "816fd0005f4c3715c3a0a1b6d5926fd374554ca51ca78de713ad5759971f967f"
+metafile = true
+
+[[files]]
 file = "world/datapacks/hd-ammo-datapack.pw.toml"
 hash = "c545a204de5b0f5adeb04e7f987537a633eb4abbe1cf28e3cb8d08f306001c50"
 metafile = true
