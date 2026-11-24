@@ -745,8 +745,13 @@ metafile = true
 
 [[files]]
 file = "options.txt"
-hash = "e8042f3fec8e20c8ab37e0b783d96adf0e82f9696d931925ff1c83ecf3bbb193"
+hash = "aed1efcc45c6c4b287897ebde714a4536d5598bddddc85d6905148b75652e1d4"
 preserve = true
+
+[[files]]
+file = "resourcepacks/BlackPigs.pw.toml"
+hash = "c3bea14312df4735a841e0a40914ee4f9fe2768b03367f20915d9aba968de9e9"
+metafile = true
 
 [[files]]
 file = "resourcepacks/FreshAnimations_v1.11.2_1.20+.pw.toml"

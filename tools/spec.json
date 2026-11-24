@@ -919,6 +919,11 @@
    "url": "https://cdn.modrinth.com/data/WCR1qfos/versions/coJcFs0W/PK_No_Creeper_Grief_V.3.0.1_MC_1.21.zip",
    "hash": "3d510ddad8f60e26a3106541b7b028cb508bc2d3",
    "side": "server"
+  },
+  {
+   "path": "resourcepacks/BlackPigs.zip",
+   "local": "repo:_files/resourcepacks/BlackPigs.zip",
+   "side": "client"
   }
  ],
  "raw": {
