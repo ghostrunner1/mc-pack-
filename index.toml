@@ -714,11 +714,6 @@ hash = "33e82185a25bd1e880157a899d5687fe2d9a049e357bb2ec757341c1d86c9d94"
 metafile = true
 
 [[files]]
-file = "mods/tacz_turrets-neoforge-4.4.0-1.21.1.pw.toml"
-hash = "735e89370297413007d9bbcb086e3c24fdb49ffcc85a9fd87bcbd21652075676"
-metafile = true
-
-[[files]]
 file = "mods/tacz_x_guns_lights_addon-neoforge-1.21.1-2.8.2.pw.toml"
 hash = "b2ab02e807dee8d68cfdda8bb10e51d08b6c5dd70c113b14b01559eebcec73e6"
 metafile = true
