@@ -784,7 +784,7 @@ metafile = true
 
 [[files]]
 file = "world/datapacks/nuclear-easy.pw.toml"
-hash = "6c96c0f21eab7d54b3f0737fdd1db5881ccffee93060dc45636c65a7d87c0dd1"
+hash = "238b9680eb2de10af928aa017e79ae736ad498841845b096b81f8ac88db38132"
 metafile = true
 
 [[files]]

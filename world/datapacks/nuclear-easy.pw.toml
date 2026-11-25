@@ -5,4 +5,4 @@ side = "server"
 [download]
 url = "https://raw.githubusercontent.com/ghostrunner1/mc-pack-/main/_files/world/datapacks/nuclear-easy.zip"
 hash-format = "sha1"
-hash = "34eee554d0a4b9b57ff62aad74a8559846bc146b"
+hash = "499295e9b40de3b42bf09b9986144b4ae46cb1cc"
