@@ -77,6 +77,21 @@ sid = find_server()
 s = server(sid)
 print("before:", status_line(s))
 
+if ACTION == "stop":
+    if s["status"] != 1:
+        print("server is not online, nothing to stop")
+    elif s.get("players", {}).get("count", 0) > 0:
+        sys.exit("players online - not stopping")
+    else:
+        req("GET", f"/servers/{sid}/stop/")
+        t = time.time()
+        while time.time() - t < 300:
+            time.sleep(10)
+            s = server(sid)
+            if s["status"] in (0, 7):
+                break
+        print("after:", status_line(s))
+
 if ACTION == "ls":
     path = os.environ.get("CONFIG_PATH", "").strip().strip("/")
     if path.split("/")[0] not in ("world", "config") or ".." in path:
