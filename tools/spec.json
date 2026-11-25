@@ -938,6 +938,17 @@
    "path": "world/datapacks/coe-nuclear.zip",
    "local": "repo:_files/world/datapacks/coe-nuclear.zip",
    "side": "server"
+  },
+  {
+   "path": "mods/create_winery-2.0.3-neoforge-1.21.1.jar",
+   "url": "https://cdn.modrinth.com/data/zBuk6egG/versions/mbnef0lU/create_winery-2.0.3-neoforge-1.21.1.jar",
+   "hash": "cc655c9e7a4f35587c72ee1a821b49f51e8d110e",
+   "side": "both"
+  },
+  {
+   "path": "world/datapacks/winery-grapes.zip",
+   "local": "repo:_files/world/datapacks/winery-grapes.zip",
+   "side": "server"
   }
  ],
  "raw": {

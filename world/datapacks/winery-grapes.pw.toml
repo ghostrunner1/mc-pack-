@@ -1,0 +1,8 @@
+name = "winery-grapes"
+filename = "winery-grapes.zip"
+side = "server"
+
+[download]
+url = "https://raw.githubusercontent.com/ghostrunner1/mc-pack-/main/_files/world/datapacks/winery-grapes.zip"
+hash-format = "sha1"
+hash = "ebef795425ee44be7d6a828a8df67cc96361a097"

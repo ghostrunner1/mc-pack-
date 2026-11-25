@@ -308,6 +308,11 @@ hash = "90ab016611b4bc2498a1f8198a19511e49d34bf55dd9ab71b099ebfbdf5dc3a3"
 metafile = true
 
 [[files]]
+file = "mods/create_winery-2.0.3-neoforge-1.21.1.pw.toml"
+hash = "cd34c27d08273a8cde851a53070aea8c3f827ec2a09285393ea3f21a7e672e54"
+metafile = true
+
+[[files]]
 file = "mods/createaddition-1.7.2.pw.toml"
 hash = "d9f5761054a912c11b11dad8866bfaa8258fb861f2b31d8c59ffc1c78eeb3e74"
 metafile = true
@@ -795,4 +800,9 @@ metafile = true
 [[files]]
 file = "world/datapacks/server-tweaks.pw.toml"
 hash = "8f1a4e60a556ca826ca772a26a054638a6e301e3789fc827fbcd303ddb9b3ca2"
+metafile = true
+
+[[files]]
+file = "world/datapacks/winery-grapes.pw.toml"
+hash = "6fa44eeeca33d3ac46359e24f654f9361695dc45a0d16d75e4015d0f8fdd6d37"
 metafile = true

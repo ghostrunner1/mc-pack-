@@ -1,0 +1,8 @@
+name = "create_winery-2.0.3-neoforge-1.21.1"
+filename = "create_winery-2.0.3-neoforge-1.21.1.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/zBuk6egG/versions/mbnef0lU/create_winery-2.0.3-neoforge-1.21.1.jar"
+hash-format = "sha1"
+hash = "cc655c9e7a4f35587c72ee1a821b49f51e8d110e"
