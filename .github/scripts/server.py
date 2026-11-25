@@ -1,6 +1,6 @@
 import json, os, re, sys, time, urllib.parse
 sys.path.insert(0, os.path.dirname(__file__))
-from deploy import req, q, find_server, server, STATUS  # noqa: E402
+from deploy import req, q, find_server, server, list_dir, STATUS  # noqa: E402
 
 ACTION = os.environ.get("ACTION", "status")
 WAIT = int(os.environ.get("WAIT_MINUTES", "15"))
@@ -76,6 +76,12 @@ def set_config(sid):
 sid = find_server()
 s = server(sid)
 print("before:", status_line(s))
+
+if ACTION == "ls":
+    path = os.environ.get("CONFIG_PATH", "").strip().strip("/")
+    if path.split("/")[0] not in ("world", "config") or ".." in path:
+        sys.exit("ls only under world/ or config/")
+    print(path, "->", list_dir(sid, path))
 
 if ACTION == "setconfig":
     if s["status"] not in (0, 7):
