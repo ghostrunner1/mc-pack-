@@ -48,7 +48,7 @@ def run_check(sid):
     print("--- check output ---")
     for l in text.splitlines()[max(0, before - 5):]:
         if CHECK_KEEP.search(l) and not re.search(r"joined|left|<", l):
-            print(UUID.sub("<uuid>", IP.sub("<ip>", l))[:600])
+            print(UUID.sub("<uuid>", IP.sub("<ip>", l))[:3000])
 
 
 sid = find_server()
