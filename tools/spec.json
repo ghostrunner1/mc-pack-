@@ -933,11 +933,6 @@
    "path": "world/datapacks/lead-fix.zip",
    "local": "repo:_files/world/datapacks/lead-fix.zip",
    "side": "server"
-  },
-  {
-   "path": "world/datapacks/creative-crafts.zip",
-   "local": "repo:_files/world/datapacks/creative-crafts.zip",
-   "side": "server"
   }
  ],
  "raw": {
