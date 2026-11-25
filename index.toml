@@ -76,6 +76,11 @@ hash = "33e7cdf4a6b323b9ed8b89315dd7856525e1e266d6f99d31a3b67fa61dc87295"
 metafile = true
 
 [[files]]
+file = "mods/Northstar-0.6.6+1.21.1.pw.toml"
+hash = "6161ef7ceb9a1b7a80c6706394353b299a06829be099b82bffcb9c03bb1f1c70"
+metafile = true
+
+[[files]]
 file = "mods/Paxi-1.21.1-NeoForge-5.1.3.pw.toml"
 hash = "f653c550b1ce4e6a533d7efd3694748f58fb4192a916d6a55828de00104444e9"
 metafile = true
@@ -192,6 +197,11 @@ metafile = true
 [[files]]
 file = "mods/climbable_ropes-2.2.2.pw.toml"
 hash = "54b4c48d4a2fb462342ad5d83679ed76838c0a6b2697d9e83060f84504430e8a"
+metafile = true
+
+[[files]]
+file = "mods/cnbridge-1.0.0.pw.toml"
+hash = "0ce4e91ccd63fb2f50de62e47eaa3c88c4dffd0a344c09decfa8bbe054b86dc8"
 metafile = true
 
 [[files]]
@@ -545,6 +555,11 @@ hash = "fb328ce7b64d2832c93187dc4e2344a55ce22ecdec989c2f6f7d11b305766f92"
 metafile = true
 
 [[files]]
+file = "mods/northstar-sable-iris-horizon-bridge-0.6.4+1.21.1.pw.toml"
+hash = "19bf08019eeec2100036b11e2c0f9b9c04ad0b32afe0ee8081a9040ee6432afd"
+metafile = true
+
+[[files]]
 file = "mods/polymorph-neoforge-1.1.0+1.21.1.pw.toml"
 hash = "44f887cc4624489b374de5f7f4fb18c9200c9b9500e0774fe75cabae17bbac43"
 metafile = true
@@ -800,6 +815,11 @@ metafile = true
 [[files]]
 file = "world/datapacks/server-tweaks.pw.toml"
 hash = "50ee873aa9ea65465b4aadae0fbd9b31f1ba2fb6cf6f2b239be716970a4e8dff"
+metafile = true
+
+[[files]]
+file = "world/datapacks/space-fluids.pw.toml"
+hash = "4054c42d73284af8e9d563ced0de846968873be4a3f8512b2b48d3566e501ab4"
 metafile = true
 
 [[files]]

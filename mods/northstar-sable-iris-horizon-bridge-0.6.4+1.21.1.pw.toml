@@ -1,0 +1,8 @@
+name = "northstar-sable-iris-horizon-bridge-0.6.4+1.21.1"
+filename = "northstar-sable-iris-horizon-bridge-0.6.4+1.21.1.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/MSoLk54A/versions/kaxeIMPF/northstar-sable-iris-horizon-bridge-0.6.4%2B1.21.1.jar"
+hash-format = "sha1"
+hash = "fd2c0774cd6a480ad51573aff1c799dea9e46d80"

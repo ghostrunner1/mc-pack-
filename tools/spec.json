@@ -949,6 +949,29 @@
    "path": "world/datapacks/winery-grapes.zip",
    "local": "repo:_files/world/datapacks/winery-grapes.zip",
    "side": "server"
+  },
+  {
+   "path": "mods/Northstar-0.6.6+1.21.1.jar",
+   "url": "https://cdn.modrinth.com/data/UZiq3QVW/versions/2xMVbJcV/Northstar-0.6.6%2B1.21.1.jar",
+   "hash": "21290951e26b8ca0c73955a13de4aa014f473a11",
+   "side": "both"
+  },
+  {
+   "path": "mods/cnbridge-1.0.0.jar",
+   "url": "https://cdn.modrinth.com/data/Mit4b2tJ/versions/Y91G3nhq/cnbridge-1.0.0.jar",
+   "hash": "50e829c2a91c38fa046f772f057e797756d346ce",
+   "side": "both"
+  },
+  {
+   "path": "mods/northstar-sable-iris-horizon-bridge-0.6.4+1.21.1.jar",
+   "url": "https://cdn.modrinth.com/data/MSoLk54A/versions/kaxeIMPF/northstar-sable-iris-horizon-bridge-0.6.4%2B1.21.1.jar",
+   "hash": "fd2c0774cd6a480ad51573aff1c799dea9e46d80",
+   "side": "both"
+  },
+  {
+   "path": "world/datapacks/space-fluids.zip",
+   "local": "repo:_files/world/datapacks/space-fluids.zip",
+   "side": "server"
   }
  ],
  "raw": {
