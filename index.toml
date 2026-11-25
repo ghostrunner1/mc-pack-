@@ -605,8 +605,8 @@ hash = "f6d92543a1702469fb37a34d2a9cc565240359877dae6f8105632d84638b4437"
 metafile = true
 
 [[files]]
-file = "mods/safezone-1.0.0.pw.toml"
-hash = "39cf51ab9a2adf984d0ff254e017685358119809e3d2f154e57b3ada950d6b78"
+file = "mods/safezone-1.1.0.pw.toml"
+hash = "e852dd455c17438cbc1c8061bc5a60859298d6357e24c2523ca4fad6ef2c819f"
 metafile = true
 
 [[files]]
@@ -799,7 +799,7 @@ metafile = true
 
 [[files]]
 file = "world/datapacks/server-tweaks.pw.toml"
-hash = "8f1a4e60a556ca826ca772a26a054638a6e301e3789fc827fbcd303ddb9b3ca2"
+hash = "50ee873aa9ea65465b4aadae0fbd9b31f1ba2fb6cf6f2b239be716970a4e8dff"
 metafile = true
 
 [[files]]

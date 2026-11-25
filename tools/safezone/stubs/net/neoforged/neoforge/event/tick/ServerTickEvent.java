@@ -1,0 +1,1 @@
+package net.neoforged.neoforge.event.tick; public abstract class ServerTickEvent extends net.neoforged.bus.api.Event { public net.minecraft.server.MinecraftServer getServer() { return null; } public static class Post extends ServerTickEvent {} }
