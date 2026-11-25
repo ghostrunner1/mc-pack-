@@ -5,4 +5,4 @@ side = "server"
 [download]
 url = "https://raw.githubusercontent.com/ghostrunner1/mc-pack-/main/_files/world/datapacks/space-fluids.zip"
 hash-format = "sha1"
-hash = "4b453cf916d2df2a811e1012e26ea482d174aca6"
+hash = "09804dee1ed67ec1cdb2ca64419eb2773ef7e71c"
