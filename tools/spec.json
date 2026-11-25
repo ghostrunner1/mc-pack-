@@ -972,6 +972,30 @@
    "path": "world/datapacks/space-fluids.zip",
    "local": "repo:_files/world/datapacks/space-fluids.zip",
    "side": "server"
+  },
+  {
+   "path": "mods/iris-neoforge-1.8.14-beta.1+mc1.21.1.jar",
+   "url": "https://cdn.modrinth.com/data/YL57xq9U/versions/KduFYu4t/iris-neoforge-1.8.14-beta.1%2Bmc1.21.1.jar",
+   "hash": "1bd129cf7bce65d6b1c0543045f0620c98a0f885",
+   "side": "client"
+  },
+  {
+   "path": "mods/colorwheel-neoforge-1.3.2+mc1.21.1.jar",
+   "url": "https://cdn.modrinth.com/data/BzHgFoGz/versions/lV874ox8/colorwheel-neoforge-1.3.2%2Bmc1.21.1.jar",
+   "hash": "d4d5681fb5f5b1d95a843b7e752ad746a56c4093",
+   "side": "client"
+  },
+  {
+   "path": "mods/irisveil-0.4.0.jar",
+   "url": "https://cdn.modrinth.com/data/owQyCHo4/versions/hWItkPzn/irisveil-0.4.0.jar",
+   "hash": "16cf9ea1a129d8aeccdff75affcd722bd2753948",
+   "side": "client"
+  },
+  {
+   "path": "shaderpacks/ComplementaryReimagined_r5.10.zip",
+   "url": "https://cdn.modrinth.com/data/HVnmMxH1/versions/RKfUB9VC/ComplementaryReimagined_r5.10.zip",
+   "hash": "ce5f303920c12f858c6b4c27a521fe7a1ba70aea",
+   "side": "client"
   }
  ],
  "raw": {

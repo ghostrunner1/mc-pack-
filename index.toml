@@ -205,6 +205,11 @@ hash = "0ce4e91ccd63fb2f50de62e47eaa3c88c4dffd0a344c09decfa8bbe054b86dc8"
 metafile = true
 
 [[files]]
+file = "mods/colorwheel-neoforge-1.3.2+mc1.21.1.pw.toml"
+hash = "d14129d1c43ab69a311a72ed0d89732eef32da21e86d95a898f50e15e5b9ae7e"
+metafile = true
+
+[[files]]
 file = "mods/copycats-3.0.11+mc.1.21.1-neoforge.pw.toml"
 hash = "866e9ccaa47bfba9ff1ef17827f213aca3cb7bbf39df19b38949022feb1dff42"
 metafile = true
@@ -483,6 +488,16 @@ metafile = true
 [[files]]
 file = "mods/interiors-1.21.1-neoforge-0.6.1.pw.toml"
 hash = "94f2a52f748439606d9bfe23aa93e58d63e11565c7654360d61f4c09790b8fd6"
+metafile = true
+
+[[files]]
+file = "mods/iris-neoforge-1.8.14-beta.1+mc1.21.1.pw.toml"
+hash = "c9f6c30637bba0ec94d8a6739a75d020afde1492412d511052a1ea6e351ffb47"
+metafile = true
+
+[[files]]
+file = "mods/irisveil-0.4.0.pw.toml"
+hash = "694c44916dd074b3368f9f62bd88b73538b4f95ed4f014f7b3025832a0ffaf1f"
 metafile = true
 
 [[files]]
@@ -776,6 +791,11 @@ preserve = true
 [[files]]
 file = "resourcepacks/FreshAnimations_v1.11.2_1.20+.pw.toml"
 hash = "a9c101b8da42fc7e82bd88d5c88f19a6b405b3afaced4663193c0dbe217f2986"
+metafile = true
+
+[[files]]
+file = "shaderpacks/ComplementaryReimagined_r5.10.pw.toml"
+hash = "09b33d43f48e13a491c81eaa3e61b73c8c4d9309318e0dba48aa4b1a14c2d70f"
 metafile = true
 
 [[files]]
