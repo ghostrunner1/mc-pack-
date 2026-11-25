@@ -2,7 +2,7 @@ hash-format = "sha256"
 
 [[files]]
 file = "config/paxi/resourcepacks/BlackPigs.pw.toml"
-hash = "e491459728b32cf69dae97eff0c5f0ce4261723744cce12e84343aa38e4fd3bf"
+hash = "b65f757662dcd27059514eda592cad3562965a61934e0385a85a0dc66fbbc876"
 metafile = true
 
 [[files]]

@@ -5,4 +5,4 @@ side = "client"
 [download]
 url = "https://raw.githubusercontent.com/ghostrunner1/mc-pack-/main/_files/config/paxi/resourcepacks/BlackPigs.zip"
 hash-format = "sha1"
-hash = "d9f36f6f288292e0f355820ce827ecb0fda50a64"
+hash = "be8839ce3406ea08fac8b7b86bcee6488410557c"
