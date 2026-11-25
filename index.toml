@@ -768,6 +768,11 @@ hash = "816fd0005f4c3715c3a0a1b6d5926fd374554ca51ca78de713ad5759971f967f"
 metafile = true
 
 [[files]]
+file = "world/datapacks/coe-nuclear.pw.toml"
+hash = "de6b15dcd5687f6a7b8bf483188dcfbc7c72217179a9bfecd17fabfc0628774a"
+metafile = true
+
+[[files]]
 file = "world/datapacks/hd-ammo-datapack.pw.toml"
 hash = "669fa19ff13e21cc76a10d2084087e3a730253c5f60d5f062f1b009d96d566dd"
 metafile = true

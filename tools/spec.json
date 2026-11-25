@@ -933,6 +933,11 @@
    "path": "world/datapacks/lead-fix.zip",
    "local": "repo:_files/world/datapacks/lead-fix.zip",
    "side": "server"
+  },
+  {
+   "path": "world/datapacks/coe-nuclear.zip",
+   "local": "repo:_files/world/datapacks/coe-nuclear.zip",
+   "side": "server"
   }
  ],
  "raw": {

@@ -1,0 +1,8 @@
+name = "coe-nuclear"
+filename = "coe-nuclear.zip"
+side = "server"
+
+[download]
+url = "https://raw.githubusercontent.com/ghostrunner1/mc-pack-/main/_files/world/datapacks/coe-nuclear.zip"
+hash-format = "sha1"
+hash = "b5cf580701ceeaf6c3562dbbacc91f9502876c5b"
