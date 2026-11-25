@@ -1,6 +1,6 @@
 import json, os, re, sys, time, urllib.parse
 sys.path.insert(0, os.path.dirname(__file__))
-from deploy import req, find_server, server, STATUS  # noqa: E402
+from deploy import req, q, find_server, server, STATUS  # noqa: E402
 
 ACTION = os.environ.get("ACTION", "status")
 WAIT = int(os.environ.get("WAIT_MINUTES", "15"))
@@ -51,9 +51,36 @@ def run_check(sid):
             print(UUID.sub("<uuid>", IP.sub("<ip>", l))[:3000])
 
 
+def set_config(sid):
+    path = os.environ.get("CONFIG_PATH", "").strip()
+    key = os.environ.get("CONFIG_KEY", "").strip()
+    value = os.environ.get("CONFIG_VALUE", "").strip()
+    if not (path.endswith(".toml") and (path.startswith("world/serverconfig/") or path.startswith("config/")) and ".." not in path):
+        sys.exit(f"refusing path {path!r}: only *.toml under world/serverconfig/ or config/")
+    if not re.fullmatch(r"[A-Za-z0-9_.-]+", key) or not re.fullmatch(r"[A-Za-z0-9_.\-\"]+", value):
+        sys.exit("bad key/value")
+    text = (req("GET", f"/servers/{sid}/files/data/{q(path)}", raw=True) or b"").decode()
+    if not text:
+        sys.exit(f"{path} not found")
+    pat = re.compile(rf"^(\s*{re.escape(key)}\s*=\s*)([^\s#]+)(.*)$", re.M)
+    hits = pat.findall(text)
+    if len(hits) != 1:
+        sys.exit(f"key {key!r} found {len(hits)} times in {path}")
+    print(f"{path}: {key} = {hits[0][1]} -> {value}")
+    new = pat.sub(lambda m: m.group(1) + value + m.group(3), text)
+    req("PUT", f"/servers/{sid}/files/data/{q(path)}", new.encode(), "application/octet-stream")
+    check = (req("GET", f"/servers/{sid}/files/data/{q(path)}", raw=True) or b"").decode()
+    print("verify:", [l.strip() for l in check.splitlines() if re.match(rf"\s*{re.escape(key)}\s*=", l)])
+
+
 sid = find_server()
 s = server(sid)
 print("before:", status_line(s))
+
+if ACTION == "setconfig":
+    if s["status"] not in (0, 7):
+        print("warning: server is not offline; the change applies after the next restart")
+    set_config(sid)
 
 if ACTION == "start":
     if s["status"] in (0, 7):

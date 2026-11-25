@@ -4,13 +4,25 @@ on:
   workflow_dispatch:
     inputs:
       action:
-        description: "status | start | logs | check"
+        description: "status | start | logs | check | setconfig"
         default: "status"
         required: true
       wait_minutes:
         description: "Minutes to wait for the server to come online (start)"
         default: "15"
         required: true
+      config_path:
+        description: "setconfig: toml path, e.g. world/serverconfig/createnuclear-server.toml"
+        default: ""
+        required: false
+      config_key:
+        description: "setconfig: key name"
+        default: ""
+        required: false
+      config_value:
+        description: "setconfig: new value"
+        default: ""
+        required: false
 
 concurrency:
   group: deploy-server
@@ -28,4 +40,7 @@ jobs:
           EXAROTON_SERVER: ${{ secrets.EXAROTON_SERVER }}
           ACTION: ${{ inputs.action }}
           WAIT_MINUTES: ${{ inputs.wait_minutes }}
+          CONFIG_PATH: ${{ inputs.config_path }}
+          CONFIG_KEY: ${{ inputs.config_key }}
+          CONFIG_VALUE: ${{ inputs.config_value }}
         run: python3 .github/scripts/server.py
