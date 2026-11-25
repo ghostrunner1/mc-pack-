@@ -279,11 +279,6 @@ hash = "13e4811be25609c5e3482f54f21945f4e198ad0f4d535b3a8747ca767512d8e5"
 metafile = true
 
 [[files]]
-file = "mods/create_optical-0.4.2.pw.toml"
-hash = "73edc0e2745ccffd87c04d2ecf19b5d610f345d02e19845958b24b8b14327fc9"
-metafile = true
-
-[[files]]
 file = "mods/create_pattern_schematics-2.0.10.pw.toml"
 hash = "f195253cbfc1a792358bf4a74f1f31a12d89a233310fa7c63c6736682ebfca4f"
 metafile = true

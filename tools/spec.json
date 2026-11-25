@@ -607,12 +607,6 @@
    "side": "both"
   },
   {
-   "path": "mods/create_optical-0.4.2.jar",
-   "url": "https://cdn.modrinth.com/data/kcZ7kwxx/versions/emVIaw53/create_optical-0.4.2.jar",
-   "hash": "d39b4d193b0c326159e9e3bfa7d5113bc19384a8",
-   "side": "both"
-  },
-  {
    "path": "mods/creategoggles-1.21.1-6.1.1-[NEOFORGE].jar",
    "url": "https://cdn.modrinth.com/data/L1RT5SJc/versions/Co24W2FL/creategoggles-1.21.1-6.1.1-%5BNEOFORGE%5D.jar",
    "hash": "e0285c31a2d2501439264c33c965409c422cd5b1",
