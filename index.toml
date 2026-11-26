@@ -36,6 +36,11 @@ hash = "7ef3c88bfb07089438977ffdf8474ac7cc0758f9fc43d6bfa32385bd00cd49b7"
 metafile = true
 
 [[files]]
+file = "mods/CreateNumismatics-1.1.0+neoforge-mc1.21.1.pw.toml"
+hash = "5ba7b4f83b46d00eed33c11e24315e0befd75b7593a83e02b30bc283e9d5f90d"
+metafile = true
+
+[[files]]
 file = "mods/Create_Warnautics-1.0.8+mc.1.21.1.pw.toml"
 hash = "9935123c6aa54db31f8e25499e2cb4a4534748d36edc4c84f431a65f7e0b1a47"
 metafile = true
