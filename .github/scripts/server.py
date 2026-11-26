@@ -7,7 +7,7 @@ WAIT = int(os.environ.get("WAIT_MINUTES", "15"))
 
 KEEP = re.compile(r"(ERROR|FATAL|Exception|Caused by|\bat [\w.$]+\(|Crash|crash-report|Failed|failed to|Mod loading|Done \(|"
                   r"Starting minecraft server|Stopping server|Loading \d+ mods|safezone|creativecrafts|datapack|"
-                  r"Missing|Invalid|Couldn't)", re.I)
+                  r"Missing|Invalid|Couldn't|configuration file for Lithium)", re.I)
 DROP = re.compile(r"(Couldn't parse element ResourceKey\[minecraft:root / minecraft:loot_table\]|Could not decode GlobalLootModifier|"
                   r"Failed to apply tag physics properties|joined the game|left the game|lost connection|logged in with|<[^>]+>|\[Server\]|issued server command|UUID of player)", re.I)
 UUID = re.compile(r"\b[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}\b", re.I)
@@ -55,19 +55,24 @@ def set_config(sid):
     path = os.environ.get("CONFIG_PATH", "").strip()
     key = os.environ.get("CONFIG_KEY", "").strip()
     value = os.environ.get("CONFIG_VALUE", "").strip()
-    if not (path.endswith(".toml") and (path.startswith("world/serverconfig/") or path.startswith("config/")) and ".." not in path):
-        sys.exit(f"refusing path {path!r}: only *.toml under world/serverconfig/ or config/")
+    props = path.endswith(".properties") and path.startswith("config/") and path.count("/") == 1
+    if not ((path.endswith(".toml") and (path.startswith("world/serverconfig/") or path.startswith("config/"))) or props) or ".." in path:
+        sys.exit(f"refusing path {path!r}: only *.toml under world/serverconfig/ or config/, or config/*.properties")
     if not re.fullmatch(r"[A-Za-z0-9_.-]+", key) or not re.fullmatch(r"[A-Za-z0-9_.\-\"]+", value):
         sys.exit("bad key/value")
     text = (req("GET", f"/servers/{sid}/files/data/{q(path)}", raw=True) or b"").decode()
-    if not text:
+    if not text and not props:
         sys.exit(f"{path} not found")
     pat = re.compile(rf"^(\s*{re.escape(key)}\s*=\s*)([^\s#]+)(.*)$", re.M)
     hits = pat.findall(text)
-    if len(hits) != 1:
-        sys.exit(f"key {key!r} found {len(hits)} times in {path}")
-    print(f"{path}: {key} = {hits[0][1]} -> {value}")
-    new = pat.sub(lambda m: m.group(1) + value + m.group(3), text)
+    if props and not hits:
+        print(f"{path}: {key} not set -> adding {key}={value}")
+        new = text + ("" if not text or text.endswith("\n") else "\n") + f"{key}={value}\n"
+    else:
+        if len(hits) != 1:
+            sys.exit(f"key {key!r} found {len(hits)} times in {path}")
+        print(f"{path}: {key} = {hits[0][1]} -> {value}")
+        new = pat.sub(lambda m: m.group(1) + value + m.group(3), text)
     req("PUT", f"/servers/{sid}/files/data/{q(path)}", new.encode(), "application/octet-stream")
     check = (req("GET", f"/servers/{sid}/files/data/{q(path)}", raw=True) or b"").decode()
     print("verify:", [l.strip() for l in check.splitlines() if re.match(rf"\s*{re.escape(key)}\s*=", l)])
