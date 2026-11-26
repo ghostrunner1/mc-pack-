@@ -813,6 +813,11 @@ hash = "816fd0005f4c3715c3a0a1b6d5926fd374554ca51ca78de713ad5759971f967f"
 metafile = true
 
 [[files]]
+file = "world/datapacks/air-density.pw.toml"
+hash = "b22eba0b7fc5a82eb9576574a2603db9f7eaed38cc97b7e68676143babf3a3f2"
+metafile = true
+
+[[files]]
 file = "world/datapacks/coe-nuclear.pw.toml"
 hash = "de6b15dcd5687f6a7b8bf483188dcfbc7c72217179a9bfecd17fabfc0628774a"
 metafile = true

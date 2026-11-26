@@ -974,6 +974,11 @@
    "side": "server"
   },
   {
+   "path": "world/datapacks/air-density.zip",
+   "local": "repo:_files/world/datapacks/air-density.zip",
+   "side": "server"
+  },
+  {
    "path": "mods/iris-neoforge-1.8.14-beta.1+mc1.21.1.jar",
    "url": "https://cdn.modrinth.com/data/YL57xq9U/versions/KduFYu4t/iris-neoforge-1.8.14-beta.1%2Bmc1.21.1.jar",
    "hash": "1bd129cf7bce65d6b1c0543045f0620c98a0f885",

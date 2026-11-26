@@ -1,0 +1,8 @@
+name = "air-density"
+filename = "air-density.zip"
+side = "server"
+
+[download]
+url = "https://raw.githubusercontent.com/ghostrunner1/mc-pack-/main/_files/world/datapacks/air-density.zip"
+hash-format = "sha1"
+hash = "4a883658e9049be42154d068ca84a282a2036571"
