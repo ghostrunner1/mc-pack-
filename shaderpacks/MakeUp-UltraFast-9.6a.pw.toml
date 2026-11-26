@@ -1,0 +1,8 @@
+name = "MakeUp-UltraFast-9.6a"
+filename = "MakeUp-UltraFast-9.6a.zip"
+side = "client"
+
+[download]
+url = "https://cdn.modrinth.com/data/izsIPI7a/versions/vXV151ey/MakeUp-UltraFast-9.6a.zip"
+hash-format = "sha1"
+hash = "15a581d5aa92cad742c079dd768aae59e0cd379a"
