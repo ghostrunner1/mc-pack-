@@ -115,6 +115,17 @@ if ACTION == "start":
             break
     print("after:", status_line(s), f"({int(time.time() - t)}s)")
 
+if ACTION == "crash":
+    files = [c for c in (list_dir(sid, "crash-reports") or []) if c.get("name", "").endswith(".txt")]
+    files.sort(key=lambda c: c["name"])
+    print("crash-reports:", [c["name"] for c in files[-5:]])
+    if files:
+        name = files[-1]["name"]
+        text = (req("GET", f"/servers/{sid}/files/data/{q('crash-reports/' + name)}", raw=True) or b"").decode(errors="replace")
+        print(f"--- {name} ({len(text.splitlines())} lines, IPs/UUIDs redacted) ---")
+        for l in text.splitlines()[:400]:
+            print(UUID.sub("<uuid>", IP.sub("<ip>", l))[:400])
+
 if ACTION in ("start", "logs") or s["status"] == 7:
     print_log(sid)
 
