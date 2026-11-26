@@ -313,8 +313,8 @@ file = "mods/create_recycle_everything-1.0.1.jar"
 hash = "eab61f8db8120443c30f062082cbbd0db1055d531051276add01f81be0532f8b"
 
 [[files]]
-file = "mods/create_submarine-3.3.0.pw.toml"
-hash = "86204c7795fcec0d4d5961704611bd7071d8b380fb15d702520012e59f3caf79"
+file = "mods/create_submarine-3.4.8.pw.toml"
+hash = "435cf20623eb6a62753465629caef73a32b28d953dbbb317a2ab1ff0301c0303"
 metafile = true
 
 [[files]]
