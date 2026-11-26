@@ -55,9 +55,9 @@ def set_config(sid):
     path = os.environ.get("CONFIG_PATH", "").strip()
     key = os.environ.get("CONFIG_KEY", "").strip()
     value = os.environ.get("CONFIG_VALUE", "").strip()
-    props = path.endswith(".properties") and path.startswith("config/") and path.count("/") == 1
+    props = (path.endswith(".properties") and path.startswith("config/") and path.count("/") == 1) or path == "server.properties"
     if not ((path.endswith(".toml") and (path.startswith("world/serverconfig/") or path.startswith("config/"))) or props) or ".." in path:
-        sys.exit(f"refusing path {path!r}: only *.toml under world/serverconfig/ or config/, or config/*.properties")
+        sys.exit(f"refusing path {path!r}: only *.toml under world/serverconfig/ or config/, or config/*.properties, or server.properties")
     if not re.fullmatch(r"[A-Za-z0-9_.-]+", key) or not re.fullmatch(r"[A-Za-z0-9_.\-\"]+", value):
         sys.exit("bad key/value")
     text = (req("GET", f"/servers/{sid}/files/data/{q(path)}", raw=True) or b"").decode()
