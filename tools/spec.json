@@ -385,6 +385,12 @@
    "side": "both"
   },
   {
+   "path": "mods/sablexaeromaps-1.21.1-1.4.2.jar",
+   "url": "https://cdn.modrinth.com/data/hqI03twF/versions/x8eDZf7t/sablexaeromaps-1.21.1-1.4.2.jar",
+   "hash": "1a8f809b7346448f9825db4d387a1e4a1439e243",
+   "side": "client"
+  },
+  {
    "path": "mods/MouseTweaks-neoforge-mc1.21-2.26.1.jar",
    "url": "https://cdn.modrinth.com/data/aC3cM3Vq/versions/9I21YYxf/MouseTweaks-neoforge-mc1.21-2.26.1.jar",
    "hash": "6dae57f4f50f7808d2ed9a18f6cd1c0d4640c6bc",

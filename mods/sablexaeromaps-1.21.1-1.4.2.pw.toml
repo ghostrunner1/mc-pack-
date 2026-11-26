@@ -1,0 +1,8 @@
+name = "sablexaeromaps-1.21.1-1.4.2"
+filename = "sablexaeromaps-1.21.1-1.4.2.jar"
+side = "client"
+
+[download]
+url = "https://cdn.modrinth.com/data/hqI03twF/versions/x8eDZf7t/sablexaeromaps-1.21.1-1.4.2.jar"
+hash-format = "sha1"
+hash = "1a8f809b7346448f9825db4d387a1e4a1439e243"
