@@ -794,6 +794,11 @@ hash = "a9c101b8da42fc7e82bd88d5c88f19a6b405b3afaced4663193c0dbe217f2986"
 metafile = true
 
 [[files]]
+file = "shaderpacks/ComplementaryReimagined_r5.10.pw.toml"
+hash = "09b33d43f48e13a491c81eaa3e61b73c8c4d9309318e0dba48aa4b1a14c2d70f"
+metafile = true
+
+[[files]]
 file = "shaderpacks/MakeUp-UltraFast-9.6a.pw.toml"
 hash = "628ad733f321bfa93693a0352d1365092632beae36e579a4adc2fd31d6e52efb"
 metafile = true

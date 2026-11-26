@@ -996,6 +996,12 @@
    "url": "https://cdn.modrinth.com/data/izsIPI7a/versions/vXV151ey/MakeUp-UltraFast-9.6a.zip",
    "hash": "15a581d5aa92cad742c079dd768aae59e0cd379a",
    "side": "client"
+  },
+  {
+   "path": "shaderpacks/ComplementaryReimagined_r5.10.zip",
+   "url": "https://cdn.modrinth.com/data/HVnmMxH1/versions/RKfUB9VC/ComplementaryReimagined_r5.10.zip",
+   "hash": "ce5f303920c12f858c6b4c27a521fe7a1ba70aea",
+   "side": "client"
   }
  ],
  "raw": {
