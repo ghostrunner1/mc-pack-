@@ -94,9 +94,33 @@ def walk(sid, path):
     return out
 
 
+# exaroton's file API rejects bodies over ~100 MB (HTTP 413). A dedicated server never reads a mod's
+# assets/ (textures, sounds, models - client only), so big mod jars are uploaded without them.
+UPLOAD_LIMIT = 90 * 1024 * 1024
+
+
+def strip_assets(data):
+    import io, zipfile
+    src = zipfile.ZipFile(io.BytesIO(data))
+    out = io.BytesIO()
+    with zipfile.ZipFile(out, "w", zipfile.ZIP_DEFLATED) as dst:
+        for info in src.infolist():
+            if info.filename.startswith("assets/"):
+                continue
+            dst.writestr(info, src.read(info.filename))
+    return out.getvalue()
+
+
 def upload(sid, rel, full):
     with open(full, "rb") as f:
-        req("PUT", f"/servers/{sid}/files/data/{q(rel)}", f.read(), "application/octet-stream")
+        data = f.read()
+    if len(data) > UPLOAD_LIMIT and rel.startswith("mods/") and rel.endswith(".jar"):
+        before = len(data)
+        data = strip_assets(data)
+        print(f"  {rel}: {before // 2**20} MB > limit, uploading without assets/ ({len(data) // 2**20} MB)")
+    if len(data) > UPLOAD_LIMIT:
+        sys.exit(f"{rel} is {len(data) // 2**20} MB, exaroton file API limit is ~100 MB")
+    req("PUT", f"/servers/{sid}/files/data/{q(rel)}", data, "application/octet-stream")
 
 
 def delete(sid, rel):
