@@ -110,6 +110,17 @@ if ACTION == "ls":
         sys.exit("ls only under world/ or config/")
     print(path, "->", list_dir(sid, path))
 
+if ACTION == "grep":
+    # print lines of a config file that contain CONFIG_KEY (case-insensitive); only *.toml under config/
+    path = os.environ.get("CONFIG_PATH", "").strip()
+    needle = os.environ.get("CONFIG_KEY", "").strip().lower()
+    if not (path.startswith("config/") and path.endswith(".toml")) or ".." in path:
+        sys.exit("grep only for config/*.toml")
+    text = (req("GET", f"/servers/{sid}/files/data/{q(path)}", raw=True) or b"").decode()
+    for i, l in enumerate(text.splitlines(), 1):
+        if needle in l.lower():
+            print(f"{i}: {l.rstrip()}")
+
 if ACTION == "setconfig":
     if s["status"] not in (0, 7):
         print("warning: server is not offline; the change applies after the next restart")
