@@ -1,0 +1,8 @@
+name = "bb-fix"
+filename = "bb-fix.zip"
+side = "server"
+
+[download]
+url = "https://raw.githubusercontent.com/ghostrunner1/mc-pack-/main/_files/world/datapacks/bb-fix.zip"
+hash-format = "sha1"
+hash = "c6c567353d8871ab6eae6091a968a0b6146d9630"

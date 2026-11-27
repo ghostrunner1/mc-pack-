@@ -348,6 +348,11 @@ hash = "a370aa8d191e5fc0a0177f4f381eee8eceff7cd2ca9a8ed962e7aa8a720a69d1"
 metafile = true
 
 [[files]]
+file = "mods/createbb-1.1.3.pw.toml"
+hash = "61c2746fff3f5f980d91c6dab7b4d5cf7768db7d8575892efb041dc6ee6ff37e"
+metafile = true
+
+[[files]]
 file = "mods/createbigcannons-5.11.7+mc.1.21.1.pw.toml"
 hash = "b293512c4a88fd439300850720fe96d2eb3e8f31797cb9f0a25ed73dc7681bec"
 metafile = true
@@ -851,6 +856,16 @@ metafile = true
 [[files]]
 file = "world/datapacks/air-density.pw.toml"
 hash = "c4534f21f1d6981b0a8e29908e2a27716db0a5eefabc19847f23f70f06cf5c3e"
+metafile = true
+
+[[files]]
+file = "world/datapacks/bb-fix.pw.toml"
+hash = "133ce9a507bdc84e436f5c859a2bb090521fa3a2ad5fa5cfd06582490fbdd91f"
+metafile = true
+
+[[files]]
+file = "world/datapacks/brokenbad-usable.pw.toml"
+hash = "00d1818f6f5553d432d2793d7e666a2312f35adfa0d253e511b1ccbcbcc814c0"
 metafile = true
 
 [[files]]

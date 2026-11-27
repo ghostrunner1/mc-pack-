@@ -1060,6 +1060,22 @@
    "path": "mods/sporeguard-1.0.0.jar",
    "local": "repo:_files/mods/sporeguard-1.0.0.jar",
    "side": "server"
+  },
+  {
+   "path": "mods/createbb-1.1.3.jar",
+   "url": "https://cdn.modrinth.com/data/uIfluo9C/versions/3miIhOJG/createbb-1.1.3.jar",
+   "hash": "152951572b3f1fe1c12dff23c17dd84fe73c513b",
+   "side": "both"
+  },
+  {
+   "path": "world/datapacks/bb-fix.zip",
+   "local": "repo:_files/world/datapacks/bb-fix.zip",
+   "side": "server"
+  },
+  {
+   "path": "world/datapacks/brokenbad-usable.zip",
+   "local": "repo:_files/world/datapacks/brokenbad-usable.zip",
+   "side": "server"
   }
  ],
  "raw": {
