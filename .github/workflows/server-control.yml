@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
     inputs:
       action:
-        description: "status | start | logs | crash | check | setconfig | ls | grep | stop"
+        description: "status | start | logs | crash | check | setconfig | ls | grep | mobs | stop"
         default: "status"
         required: true
       wait_minutes:

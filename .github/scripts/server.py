@@ -32,11 +32,20 @@ CHECK_CMDS = ["datapack list enabled", "datapack list available", "neoforge tps"
 CHECK_KEEP = re.compile(r"(data pack|datapack|TPS|Mean tick|players online|There are)", re.I)
 
 
-def run_check(sid):
+MOB_CMDS = ["difficulty", "gamerule doMobSpawning", "gamerule spawnChunkRadius", "gamerule doDaylightCycle", "time query daytime",
+            "execute if entity @e[type=minecraft:zombie]", "execute if entity @e[type=minecraft:skeleton]",
+            "execute if entity @e[type=minecraft:creeper]", "execute if entity @e[type=minecraft:spider]",
+            "execute if entity @e[type=#minecraft:undead]", "execute if entity @e", "list"]
+MOB_KEEP = re.compile(r"(difficulty|Gamerule|time is|Test (passed|failed)|players online|Unknown|Incorrect|error)", re.I)
+
+
+def run_check(sid, cmds=None, keep=None):
+    cmds = cmds or CHECK_CMDS
+    keep = keep or CHECK_KEEP
     def live():
         return (req("GET", f"/servers/{sid}/logs/").get("data") or {}).get("content") or ""
     before = len(live().splitlines())
-    for c in CHECK_CMDS:
+    for c in cmds:
         req("POST", f"/servers/{sid}/command/", json.dumps({"command": c}).encode(), "application/json")
         time.sleep(2)
     text = ""
@@ -47,7 +56,7 @@ def run_check(sid):
             break
     print("--- check output ---")
     for l in text.splitlines()[max(0, before - 5):]:
-        if CHECK_KEEP.search(l) and not re.search(r"joined|left|<", l):
+        if keep.search(l) and not re.search(r"joined|left|<", l):
             print(UUID.sub("<uuid>", IP.sub("<ip>", l))[:3000])
 
 
@@ -114,8 +123,8 @@ if ACTION == "grep":
     # print lines of a config file that contain CONFIG_KEY (case-insensitive); only *.toml under config/
     path = os.environ.get("CONFIG_PATH", "").strip()
     needle = os.environ.get("CONFIG_KEY", "").strip().lower()
-    if not (path.startswith("config/") and path.endswith(".toml")) or ".." in path:
-        sys.exit("grep only for config/*.toml")
+    if not (path == "server.properties" or (path.startswith("config/") and path.endswith((".toml", ".yml", ".yaml", ".json", ".json5")))) or ".." in path:
+        sys.exit("grep only for server.properties or config/*.toml|yml|json")
     text = (req("GET", f"/servers/{sid}/files/data/{q(path)}", raw=True) or b"").decode()
     for i, l in enumerate(text.splitlines(), 1):
         if needle in l.lower():
@@ -151,6 +160,11 @@ if ACTION == "crash":
 
 if ACTION in ("start", "logs") or s["status"] == 7:
     print_log(sid)
+
+if ACTION == "mobs":
+    if s["status"] != 1:
+        sys.exit("server is not online")
+    run_check(sid, MOB_CMDS, MOB_KEEP)
 
 if ACTION == "check" or (ACTION == "start" and s["status"] == 1):
     if s["status"] == 1:
