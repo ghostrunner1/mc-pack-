@@ -54,7 +54,7 @@ public class SafeZone {
 
     private static boolean isHorror(Entity e) {
         String id = String.valueOf(EntityType.getKey(e.getType()));
-        return id.equals("skinwalker:skinwalker") || id.equals("cave_dweller:cave_dweller");
+        return id.equals("skinwalker:skinwalker") || id.equals("cave_dweller:cave_dweller") || id.startsWith("spore:");
     }
 
     private static boolean inZone(String dim, double x, double z) {

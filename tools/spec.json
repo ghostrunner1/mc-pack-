@@ -922,8 +922,8 @@
    "side": "client"
   },
   {
-   "path": "mods/safezone-1.1.0.jar",
-   "local": "repo:_files/mods/safezone-1.1.0.jar",
+   "path": "mods/safezone-1.2.0.jar",
+   "local": "repo:_files/mods/safezone-1.2.0.jar",
    "side": "server"
   },
   {
