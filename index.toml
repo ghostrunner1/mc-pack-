@@ -353,6 +353,11 @@ hash = "b293512c4a88fd439300850720fe96d2eb3e8f31797cb9f0a25ed73dc7681bec"
 metafile = true
 
 [[files]]
+file = "mods/createcafe-1.4.3.pw.toml"
+hash = "dcfb1bb2dd2c07a60a4749fbfc5e8627fbe8abd1ff3950b5b7f78f372b944846"
+metafile = true
+
+[[files]]
 file = "mods/createdeco-2.1.3.pw.toml"
 hash = "aa71524676ec878d39f52da708a15895fc8e986da81f41463f630c80f3c4e8d2"
 metafile = true
@@ -432,10 +437,6 @@ hash = "9fe42a00f7ce9a2b730c5b09fda3dee3c52a294e4b5c838b69f449e7ddcd0cdc"
 metafile = true
 
 [[files]]
-file = "mods/entityanim-lib-2.1.jar"
-hash = "8806578d1262ba2973fd26cd9a1bb8bbba36f01f91b3a11d0d5d1eade298b864"
-
-[[files]]
 file = "mods/entityculling-neoforge-1.12.1-mc1.21.1.pw.toml"
 hash = "646c5f2e2e6b281ab0bb1b5de6dc21ae25581b429040ee02cf42c69f76553144"
 metafile = true
@@ -443,6 +444,11 @@ metafile = true
 [[files]]
 file = "mods/fallingleaves-1.21.1-2.6.0.pw.toml"
 hash = "87b7555079a0202decbb27e5ef8e756ff492c0a737f0e914d251a9b05a67f4f0"
+metafile = true
+
+[[files]]
+file = "mods/farmersrespite-1.21.1-3.0.1.pw.toml"
+hash = "5a133b70b0b40b50085fd87be5b1bb48427022149518ef17b291f89fd86e4a8b"
 metafile = true
 
 [[files]]
@@ -865,6 +871,11 @@ metafile = true
 [[files]]
 file = "world/datapacks/nuclear-thorium-fix.pw.toml"
 hash = "78e5e401187d48a3a8d5a86045032855822f35c8302d61351d4b3cc273411c0c"
+metafile = true
+
+[[files]]
+file = "world/datapacks/respite-seeds.pw.toml"
+hash = "03c1e9bf77efd91de8f4e5b8d0508329b40a124f91f497d8bd4c2678fb63c55e"
 metafile = true
 
 [[files]]

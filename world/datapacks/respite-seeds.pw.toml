@@ -1,0 +1,8 @@
+name = "respite-seeds"
+filename = "respite-seeds.zip"
+side = "server"
+
+[download]
+url = "https://raw.githubusercontent.com/ghostrunner1/mc-pack-/main/_files/world/datapacks/respite-seeds.zip"
+hash-format = "sha1"
+hash = "23fe61dfa815251075f626f8ef4c6e0b533f6176"
