@@ -190,6 +190,11 @@ file = "mods/catalyst-0.17.0.jar"
 hash = "e7b61771e6d0dec95814037f61af3e7afd58e5c972d12ab87ca014a1510d3c12"
 
 [[files]]
+file = "mods/cbc_ballistic_computer-1.3.5.10.pw.toml"
+hash = "d7fb18068897bb01b96b6ffe5feeac27c72d4412c214f77497d7e7eb21d5c3d7"
+metafile = true
+
+[[files]]
 file = "mods/cc-tweaked-1.21.1-forge-1.121.0.pw.toml"
 hash = "7ae0c7e0e7b26ff2348ba4defabc153170f1d3353012de9f5606c241155c7946"
 metafile = true

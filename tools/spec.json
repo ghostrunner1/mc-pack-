@@ -1019,6 +1019,12 @@
    "url": "https://cdn.modrinth.com/data/Jdbbtt0i/versions/kVi3TESX/CreateNumismatics-1.1.0%2Bneoforge-mc1.21.1.jar",
    "hash": "5cd4817442ae95f886a2d31534166e9883ed4bb2",
    "side": "both"
+  },
+  {
+   "path": "mods/cbc_ballistic_computer-1.3.5.10.jar",
+   "url": "https://cdn.modrinth.com/data/Pol2YROZ/versions/6O6X2qcH/cbc_ballistic_computer-1.3.5.10.jar",
+   "hash": "6164ade8c3041428c2d76db25944bfd38e9a3d7c",
+   "side": "both"
   }
  ],
  "raw": {
