@@ -864,6 +864,11 @@ hash = "c4534f21f1d6981b0a8e29908e2a27716db0a5eefabc19847f23f70f06cf5c3e"
 metafile = true
 
 [[files]]
+file = "world/datapacks/amulet-recipes.pw.toml"
+hash = "00d28b4a3bb810f7bcbb68164e192260fa39ab989150a6f8f597e5445fe05cfa"
+metafile = true
+
+[[files]]
 file = "world/datapacks/bb-fix.pw.toml"
 hash = "7c28489445b690a06987dd698930a47b128fad9f78b33acfbd4bbae7683a30f1"
 metafile = true

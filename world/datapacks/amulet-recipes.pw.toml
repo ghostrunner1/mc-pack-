@@ -1,0 +1,8 @@
+name = "amulet-recipes"
+filename = "amulet-recipes.zip"
+side = "server"
+
+[download]
+url = "https://raw.githubusercontent.com/ghostrunner1/mc-pack-/main/_files/world/datapacks/amulet-recipes.zip"
+hash-format = "sha1"
+hash = "15bd9dfbddf0b091759e424cc689ff4838e775d5"
