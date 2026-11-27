@@ -1,0 +1,20 @@
+modLoader="javafml"
+loaderVersion="[1,)"
+license="All Rights Reserved"
+
+[[mods]]
+modId="sporeguard"
+version="1.0.0"
+displayName="Spore Guard"
+description='''Fungal Infection: Spore mobs cannot break or replace blocks. Server only.'''
+displayTest="IGNORE_ALL_VERSION"
+
+[[mixins]]
+config="sporeguard.mixins.json"
+
+[[dependencies.sporeguard]]
+modId="neoforge"
+type="required"
+versionRange="[21.1,)"
+ordering="NONE"
+side="BOTH"

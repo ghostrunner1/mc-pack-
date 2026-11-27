@@ -1049,6 +1049,17 @@
    "path": "world/datapacks/respite-seeds.zip",
    "local": "repo:_files/world/datapacks/respite-seeds.zip",
    "side": "server"
+  },
+  {
+   "path": "mods/spore_1.21.1_2.2.0j_neo.jar",
+   "url": "https://cdn.modrinth.com/data/X661i40C/versions/DwE3w8IX/spore_1.21.1_2.2.0j_neo.jar",
+   "hash": "43b07f98a760328a6d092f8a8c502e6ea81989e5",
+   "side": "both"
+  },
+  {
+   "path": "mods/sporeguard-1.0.0.jar",
+   "local": "repo:_files/mods/sporeguard-1.0.0.jar",
+   "side": "server"
   }
  ],
  "raw": {

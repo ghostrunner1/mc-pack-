@@ -1,0 +1,1 @@
+package net.minecraft.server; public abstract class MinecraftServer { public Iterable<net.minecraft.server.level.ServerLevel> getAllLevels() { return null; } public java.nio.file.Path getWorldPath(net.minecraft.world.level.storage.LevelResource r) { return null; } }

@@ -1,0 +1,8 @@
+name = "spore_1.21.1_2.2.0j_neo"
+filename = "spore_1.21.1_2.2.0j_neo.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/X661i40C/versions/DwE3w8IX/spore_1.21.1_2.2.0j_neo.jar"
+hash-format = "sha1"
+hash = "43b07f98a760328a6d092f8a8c502e6ea81989e5"

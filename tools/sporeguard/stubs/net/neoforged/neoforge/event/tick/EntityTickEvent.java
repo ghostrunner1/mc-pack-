@@ -1,0 +1,1 @@
+package net.neoforged.neoforge.event.tick; public abstract class EntityTickEvent extends net.neoforged.neoforge.event.entity.EntityEvent { public static class Pre extends EntityTickEvent {} public static class Post extends EntityTickEvent {} }

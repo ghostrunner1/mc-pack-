@@ -1,0 +1,1 @@
+package net.neoforged.neoforge.event.level; public abstract class ExplosionEvent extends net.neoforged.bus.api.Event { public net.minecraft.world.level.Explosion getExplosion() { return null; } public static class Detonate extends ExplosionEvent { public java.util.List<net.minecraft.core.BlockPos> getAffectedBlocks() { return null; } } }

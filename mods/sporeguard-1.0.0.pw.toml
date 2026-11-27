@@ -1,0 +1,8 @@
+name = "sporeguard-1.0.0"
+filename = "sporeguard-1.0.0.jar"
+side = "server"
+
+[download]
+url = "https://raw.githubusercontent.com/ghostrunner1/mc-pack-/main/_files/mods/sporeguard-1.0.0.jar"
+hash-format = "sha1"
+hash = "7f36845fe29f2b462319b1b2334fcad85ed7e213"

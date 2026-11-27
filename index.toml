@@ -731,6 +731,16 @@ hash = "3baa27c304b7947a3e7d6f5910b3b9e6b9fda065284ca7f219072ccc62c6d2e1"
 metafile = true
 
 [[files]]
+file = "mods/spore_1.21.1_2.2.0j_neo.pw.toml"
+hash = "48a316c9f624381bc570b9065fe842c4d9c00092acc4ec27f843b5ef63284684"
+metafile = true
+
+[[files]]
+file = "mods/sporeguard-1.0.0.pw.toml"
+hash = "819b5b39194345bc2e00df35367b7fe2a188b354bb909f68fa80c6c3bb22834b"
+metafile = true
+
+[[files]]
 file = "mods/stickywheels-1.21.1-0.0.3.pw.toml"
 hash = "412afe223095003ffe0691995461d64ea0a7b8644ca4ecc9fdf9af3c67813dfb"
 metafile = true
