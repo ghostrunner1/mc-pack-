@@ -52,30 +52,37 @@ def run_check(sid):
 
 
 def set_config(sid):
+    # CONFIG_KEY / CONFIG_VALUE may hold several pairs separated by "|".
+    # Keys may contain spaces and ? (quoted TOML keys like "Should a calamity load chunks?").
     path = os.environ.get("CONFIG_PATH", "").strip()
-    key = os.environ.get("CONFIG_KEY", "").strip()
-    value = os.environ.get("CONFIG_VALUE", "").strip()
+    keys = [k.strip() for k in os.environ.get("CONFIG_KEY", "").split("|")]
+    values = [v.strip() for v in os.environ.get("CONFIG_VALUE", "").split("|")]
     props = (path.endswith(".properties") and path.startswith("config/") and path.count("/") == 1) or path == "server.properties"
     if not ((path.endswith(".toml") and (path.startswith("world/serverconfig/") or path.startswith("config/"))) or props) or ".." in path:
         sys.exit(f"refusing path {path!r}: only *.toml under world/serverconfig/ or config/, or config/*.properties, or server.properties")
-    if not re.fullmatch(r"[A-Za-z0-9_.-]+", key) or not re.fullmatch(r"[A-Za-z0-9_.\-\"]+", value):
-        sys.exit("bad key/value")
+    if len(keys) != len(values):
+        sys.exit("CONFIG_KEY and CONFIG_VALUE must have the same number of |-separated items")
+    for key, value in zip(keys, values):
+        if not re.fullmatch(r"[A-Za-z0-9_.\- ?',:()]+", key) or not re.fullmatch(r"[A-Za-z0-9_.\-\"]+", value):
+            sys.exit(f"bad key/value: {key!r} = {value!r}")
     text = (req("GET", f"/servers/{sid}/files/data/{q(path)}", raw=True) or b"").decode()
     if not text and not props:
         sys.exit(f"{path} not found")
-    pat = re.compile(rf"^(\s*{re.escape(key)}\s*=\s*)([^\s#]+)(.*)$", re.M)
-    hits = pat.findall(text)
-    if props and not hits:
-        print(f"{path}: {key} not set -> adding {key}={value}")
-        new = text + ("" if not text or text.endswith("\n") else "\n") + f"{key}={value}\n"
-    else:
+    for key, value in zip(keys, values):
+        pat = re.compile(rf'^(\s*"?{re.escape(key)}"?\s*=\s*)([^\s#]+)(.*)$', re.M)
+        hits = pat.findall(text)
+        if props and not hits:
+            print(f"{path}: {key} not set -> adding {key}={value}")
+            text = text + ("" if not text or text.endswith("\n") else "\n") + f"{key}={value}\n"
+            continue
         if len(hits) != 1:
-            sys.exit(f"key {key!r} found {len(hits)} times in {path}")
+            sys.exit(f"key {key!r} found {len(hits)} times in {path} - nothing written")
         print(f"{path}: {key} = {hits[0][1]} -> {value}")
-        new = pat.sub(lambda m: m.group(1) + value + m.group(3), text)
-    req("PUT", f"/servers/{sid}/files/data/{q(path)}", new.encode(), "application/octet-stream")
+        text = pat.sub(lambda m: m.group(1) + value + m.group(3), text)
+    req("PUT", f"/servers/{sid}/files/data/{q(path)}", text.encode(), "application/octet-stream")
     check = (req("GET", f"/servers/{sid}/files/data/{q(path)}", raw=True) or b"").decode()
-    print("verify:", [l.strip() for l in check.splitlines() if re.match(rf"\s*{re.escape(key)}\s*=", l)])
+    for key in keys:
+        print("verify:", [l.strip() for l in check.splitlines() if re.match(rf'\s*"?{re.escape(key)}"?\s*=', l)])
 
 
 sid = find_server()

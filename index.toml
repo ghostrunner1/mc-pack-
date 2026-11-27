@@ -860,7 +860,7 @@ metafile = true
 
 [[files]]
 file = "world/datapacks/bb-fix.pw.toml"
-hash = "133ce9a507bdc84e436f5c859a2bb090521fa3a2ad5fa5cfd06582490fbdd91f"
+hash = "7c28489445b690a06987dd698930a47b128fad9f78b33acfbd4bbae7683a30f1"
 metafile = true
 
 [[files]]
