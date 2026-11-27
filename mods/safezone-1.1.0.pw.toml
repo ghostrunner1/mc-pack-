@@ -1,8 +1,0 @@
-name = "safezone-1.1.0"
-filename = "safezone-1.1.0.jar"
-side = "server"
-
-[download]
-url = "https://raw.githubusercontent.com/ghostrunner1/mc-pack-/main/_files/mods/safezone-1.1.0.jar"
-hash-format = "sha1"
-hash = "255c6e44dc5348a7e4b9b6986f8515bf673a6374"

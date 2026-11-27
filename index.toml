@@ -671,8 +671,8 @@ hash = "bbda19d6219696a7875701821b8703580af4066be46a238095cbd3ff652cd07d"
 metafile = true
 
 [[files]]
-file = "mods/safezone-1.1.0.pw.toml"
-hash = "e852dd455c17438cbc1c8061bc5a60859298d6357e24c2523ca4fad6ef2c819f"
+file = "mods/safezone-1.2.0.pw.toml"
+hash = "e13264561a61c6d0f3087f3d8d4191c42bb2fa3d49a3cc6a7514a1413ec1901e"
 metafile = true
 
 [[files]]
