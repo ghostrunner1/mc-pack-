@@ -1,0 +1,8 @@
+name = "engine-fuels"
+filename = "engine-fuels.zip"
+side = "server"
+
+[download]
+url = "https://raw.githubusercontent.com/ghostrunner1/mc-pack-/main/_files/world/datapacks/engine-fuels.zip"
+hash-format = "sha1"
+hash = "b1edda14ce81f97b6740d381d782b71a53e607a5"

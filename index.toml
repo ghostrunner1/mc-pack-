@@ -590,6 +590,11 @@ hash = "44f887cc4624489b374de5f7f4fb18c9200c9b9500e0774fe75cabae17bbac43"
 metafile = true
 
 [[files]]
+file = "mods/portable_engine_liquid_fuel-2.0.0-neoforge-1.21.1.pw.toml"
+hash = "c9b6f113618171bed5eca2c297af3556eb335059ef1361e35efe18f7caaa7251"
+metafile = true
+
+[[files]]
 file = "mods/railways-0.2.1+neoforge-mc1.21.1.pw.toml"
 hash = "0b5461f9939455b0baad315a517e388c9581b05cc824bb9c1d46c1d495b60e9f"
 metafile = true
@@ -835,6 +840,11 @@ metafile = true
 [[files]]
 file = "world/datapacks/coe-nuclear.pw.toml"
 hash = "de6b15dcd5687f6a7b8bf483188dcfbc7c72217179a9bfecd17fabfc0628774a"
+metafile = true
+
+[[files]]
+file = "world/datapacks/engine-fuels.pw.toml"
+hash = "3c54e171acb59558f83a97fb7cb1bd81f51c2817afb215f3365a37bcad04d4c3"
 metafile = true
 
 [[files]]
