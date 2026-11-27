@@ -1076,6 +1076,12 @@
    "path": "world/datapacks/brokenbad-usable.zip",
    "local": "repo:_files/world/datapacks/brokenbad-usable.zip",
    "side": "server"
+  },
+  {
+   "path": "mods/AmuletsOfNorine-neoforge-1.21.1-1.5.9.jar",
+   "url": "https://mediafilez.forgecdn.net/files/9768/67/AmuletsOfNorine-neoforge-1.21.1-1.5.9.jar",
+   "hash": "913e80c9432db05c1d8be3a2d6d8399f95850611",
+   "side": "both"
   }
  ],
  "raw": {

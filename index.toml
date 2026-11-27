@@ -6,6 +6,11 @@ hash = "b257a65cfec99609015dfcc0637b5565426518e73334d022059b50a548d40b8f"
 metafile = true
 
 [[files]]
+file = "mods/AmuletsOfNorine-neoforge-1.21.1-1.5.9.pw.toml"
+hash = "69b4b5e76091e85a1f6703891f1a9872f681172b238e749c07afb8adf7c79f7c"
+metafile = true
+
+[[files]]
 file = "mods/BadOptimizations-2.4.1-1.21.1.pw.toml"
 hash = "62d3712cbc01493ae11c763fedf701e662f3641de167cc355401b34443f348cc"
 metafile = true
